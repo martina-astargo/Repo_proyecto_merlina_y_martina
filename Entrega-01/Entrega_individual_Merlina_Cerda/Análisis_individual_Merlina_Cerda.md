@@ -1,4 +1,4 @@
-## Análisis individual: Merlina Cerda 
+## Análisis individual: Merlina Cerda ##
 
 Me considero una persona muy consumidora de teleseries chilenas. Desde pequeña tengo la costumbre de sentarme con mi familia a ver las novelas de la tarde durante el almuerzo, y más tarde, cuando tomábamos once. Aunque verlas es costumbre para mí, creo que han sido pocas las veces en que me he detenido a cuestionar cómo se representan ciertos personajes o elementos de la trama.
 
