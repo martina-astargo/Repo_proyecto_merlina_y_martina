@@ -45,6 +45,7 @@ Lo mínimo que se puede contar con los datos que vamos a recopilar son los ester
 Respecto al máximo, creemos que podemos lograr crear reportaje completo y detallado incluyendo una línea temporal, con los cambios en los estereotipos, la relación entre el éxito que tiene una teleserie según como se representó a la protagonista femenina, la época de oro de los canales de televisión y cómo influyó el protagonismo o personaje de la mujer. En Chilevisión, por ejemplo, las teleseries más vistas fueron “La sexóloga” y “Mujeres de Lujo”, donde los personajes femeninos generalmente se muestran con menos ropa y tocaban temas sexuales. Nos gustaría lograr evaluar las diferencias en las teleseries de los distintos canales (T13, CHV, Mega y TVN), descubrir cuál tuvo más éxito, por qué, evaluar cómo acostumbraba a mostrar a las mujeres, etc. Visualmente queremos lograr entregar los datos de manera muy gráfica, a través del collage de posters y analizar los patrones de cada producción.  
 
 Nuestros enlaces de información:  
-https://repositoriobibliotecas.uv.cl/items/849fe9bb-fdff-420d-8389-484cf6fc831a?utm_source=chatgpt.com
-https://cntv.cl/2020/01/teleseries-crean-estereotipos-femeninos-segun-estudio-del-cntv/?utm_source=chatgpt.com
+Tesis Universidad de Valparaíso: https://repositoriobibliotecas.uv.cl/items/849fe9bb-fdff-420d-8389-484cf6fc831a?utm_source=chatgpt.com
+
+Encuesta: https://cntv.cl/2020/01/teleseries-crean-estereotipos-femeninos-segun-estudio-del-cntv/?utm_source=chatgpt.com
 
