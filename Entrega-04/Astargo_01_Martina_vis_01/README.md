@@ -17,8 +17,8 @@ Mi afiche muestra el gráfico como tal y hace un desglose sobre los puntos que m
 
 *Subtítulo y números:* El subtítulo es con la misma tipografía que señalamos en el manual, pero cambie el color porque considerando que es un afiche más pequeño, sentía que el rosado marcaba mucho más la pregunta. Los números tampoco están en el manual ni los incluiremos en la página, pero quería guiar el orden de lectura para que se entendiera mejor el desglose (igual funciona sin números, pero mantiene el orden con ellos).
 
-*Elementos gráficos:* Son televisores como los señalados en el manual (no son exactos, pero lo más similar que encontré) y el control remoto y las mujeres solo lo puse para darle un poco más de color y animación al afiche (no están considerados en el manual, solo el control remoto, pero es otro). 
+*Elementos gráficos:* Son televisores como los señalados en el manual (no son exactos, pero lo más similar que encontré) y una foto de la teleserie "Brujas" que fue destacada por contar con persanjes femeninos como protagonistas, pero también cae en la lógica de estereotipo. 
 
-Finalmente quise destacar "drama" con rosado, para que nuestros usuarios comiencen a relacionar estereotipos y roles que son comunes en las teleseries y genere un interés mayor por la página. 
+Finalmente quise destacar "drama" con rosado, para que nuestros usuarios comiencen a relacionar estereotipos y roles que son comunes en las teleseries y genere un interés mayor por la página. Agregué líneas de color burdeo como separador. 
 
 Por último, quise marcar el parráfo de "conclusión" dentro de la televisión plasma para que se viera distinto. 
