@@ -1,4 +1,5 @@
-** Lectura visual de la pieza **
+**Lectura visual de la pieza**
+
 En primer lugar, la tipografía, los colores, el logo y la idea del afiche son las mismas que estipulamos en el libro de identidad visual, por lo que creemos que este trabajo puede reflejar muy bien cómo se vera nuestra página web ya lista. 
 
 El gráfico como tal, muestra a que género han estado ligados los papeles femeninos y masculinos a lo largo de las décadas en las teleseries chilenas. En la prosa, quise reafirmar los que arroja la imagen, pero complementándola con otra información más especifica sobre a que historias de drama más específicamente estaban ligadas las mujeres y los hombres, el papel que cada uno desempeña en la trama, etc. 
