@@ -1,4 +1,4 @@
-** Lectura visual de la pieza **
+Lectura visual de la pieza 
 
 En primer lugar, la tipografía, los colores, el logo y la idea del afiche son las mismas que estipulamos en el libro de identidad visual, por lo que creemos que este trabajo puede reflejar muy bien cómo se vera nuestra página web ya lista. 
 
