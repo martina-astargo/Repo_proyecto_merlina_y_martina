@@ -1,4 +1,5 @@
-**¡A qué papeles han sido asociadas las mujeres en las teleseries chielnas?**
+** ¿A qué papeles han sido asociadas las mujeres en las teleseries chilenas? **
+
 Desde 1967, cuando se emitió la primera teleserie chilena —Los días jóvenes—, nuestro país no ha dejado de construir mundos ficticios con historias de amor, traiciones, secretos familiares y pasiones que han marcado a muchas generaciones. Sin embargo, al mirar estas historias con un ojo crítico podemos darnos cuenta de la representación femenina estereotipada que existe en ellas.
 
 Las teleseries han funcionado como un espejo de la sociedad chilena: reflejan nuestras costumbres, nuestros conflictos y, sobre todo, los estigmas de nuestra sociedad. Y aunque el papel de la protagonista femenina ha evolucionado, con tramas mucho más profundas y complejas, aún existen ideas en torno a ellas muy difíciles de erradicar.
