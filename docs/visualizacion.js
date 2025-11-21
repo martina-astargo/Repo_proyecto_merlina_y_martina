@@ -1,0 +1,2 @@
+javascript
+cuando agregamos gráficos 
