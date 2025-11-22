@@ -1,10 +1,16 @@
+.title {
+    text-align: center;
+    margin-top: 80px; 
+}
+
 .title h1 {
     color: #ff186e;
     font-family: "Playfair Display", serif;
+    margin: 0;
 }
-
 
 .title h3 {
     color: #000000;
     font-family: "Roboto Mono", monospace;
+    margin-top: 10px;
 }
