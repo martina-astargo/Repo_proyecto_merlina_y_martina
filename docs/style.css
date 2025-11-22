@@ -1,11 +1,13 @@
 .title h1 {
-    color: red;
+    color: #ff186e;
     font-size: 3rem;
+    font-weight: 800;
     text-align: center;
 }
 
 .title h3 {
-    color: gray;
+    color: #000000;
+    font-size: 1.3rem;
     text-align: center;
+    margin-top: 10px;
 }
-
