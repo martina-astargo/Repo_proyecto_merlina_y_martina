@@ -42,3 +42,47 @@ p {
     margin-top: 20px;
     opacity: 0.8;
 }
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.carousel button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #333;
+}
+
+.carousel-track {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.card {
+    min-width: 280px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
