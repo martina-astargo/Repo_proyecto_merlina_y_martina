@@ -1,43 +1,34 @@
-/* ------------------------- */
-/*        TÍTULO Y SUBTÍTULO */
-/* ------------------------- */
-
+/* Título y subtítulo */
 .title {
     text-align: center;
-    margin-top: 80px;   /* separación desde arriba */
-    margin-bottom: 60px; /* separación hacia el párrafo */
+    margin-top: 80px;
 }
 
 .title h1 {
-    color: #ff186e; /* tu color original */
+    color: #ff186e;
     font-family: "Playfair Display", serif;
     margin: 0;
-    font-size: 3rem;
 }
 
 .title h3 {
     color: #000000;
     font-family: "Roboto Mono", monospace;
     margin-top: 10px;
-    font-size: 1.3rem;
 }
 
-/* ------------------------- */
-/*          PÁRRAFO          */
-/* ------------------------- */
-
+/* Párrafo */
 .contenido {
+    margin-top: 60px;           /* separación */
     width: 100%;
-    display: flex;            /* centra el párrafo */
-    justify-content: center;  /* centra horizontalmente */
+    display: flex;
+    justify-content: center;    /* centra el bloque */
 }
 
 .contenido p {
-    max-width: 800px;      /* ancho para lectura */
-    text-align: center;    /* texto centrado */
+    width: 100%;
+    max-width: 700px;           /* hace una columna centrada */
+    text-align: center;         /* centra el texto */
     font-size: 1.2rem;
     line-height: 1.7;
-    color: #333;           /* color neutro que combina con tu paleta */
-    font-family: "Playfair Display", serif; /* mantiene tu estilo elegante */
-    padding: 0 20px;       /* espacio en móviles */
-}
+    color: #333;
+    font-famil
