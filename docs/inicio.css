@@ -1,87 +1,60 @@
-/* FONDO GENERAL */
+/* ------------------------------ */
+/* CONFIGURACIÓN GLOBAL           */
+/* ------------------------------ */
+
 body {
     background-color: #f3f3ee;
     margin: 0;
-    font-family: "Roboto Mono", monospace;
+    padding: 0;
+    font-family: 'Courier New', monospace;
     color: black;
 }
 
-/* LOGO */
-header .logo {
+/* ------------------------------ */
+/* HEADER Y LOGO                  */
+/* ------------------------------ */
+header {
     padding: 20px;
 }
 
-header .logo img {
-    width: 180px;
+.logo img {
+    width: 200px;
 }
 
-/* TÍTULO PRINCIPAL */
+/* ------------------------------ */
+/* TÍTULO Y PÁRRAFO               */
+/* ------------------------------ */
+
 .title {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    text-align: left;
+    margin: 40px auto 0;
+    width: 80%;
 }
 
 .title h1 {
-    color: #ff186e;
-    font-family: "Playfair Display", serif;
-    margin: 0;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .title h3 {
-    margin-top: 10px;
-    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 40px;
 }
 
-/* PÁRRAFO INTRO */
 .intro {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 40px;
-    font-size: 17px;
-    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+    font-size: 18px;
     text-align: justify;
 }
 
-/* CARRUSEL */
-.carousel {
-    margin-top: 60px;
+/* ------------------------------ */
+/* CARRUSEL                       */
+/* ------------------------------ */
+
+.carousel-container {
+    width: 90%;
+    margin: 0 auto 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.carousel button {
-    background: none;
-    border: none;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.carousel-track {
-    display: flex;
-    overflow: hidden;
-    width: 70%;
-}
-
-.card {
-    min-width: 260px;
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0 20px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
+    align-

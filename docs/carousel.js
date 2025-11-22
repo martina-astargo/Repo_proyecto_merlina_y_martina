@@ -15,8 +15,8 @@ prev.addEventListener("click", () => {
 });
 
 function moveCarousel() {
-    const cards = document.querySelectorAll(".card");
-    const cardWidth = cards[0].clientWidth + 40;
+    const cards = document.querySelectorAll(".carousel-item");
+    const cardWidth = cards[0].clientWidth + 30; // margen incluido
 
     if (index < 0) index = 0;
     if (index >= cards.length - 1) index = cards.length - 1;
