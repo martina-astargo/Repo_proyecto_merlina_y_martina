@@ -25,19 +25,20 @@
 /* ------------------------- */
 /*          PÁRRAFO          */
 /* ------------------------- */
-
 .contenido {
     width: 100%;
-    display: flex;            /* centra el párrafo */
-    justify-content: center;  /* centra horizontalmente */
+    display: flex;
+    justify-content: center;   /* centra el bloque completo */
+    margin-top: 60px;
 }
 
 .contenido p {
-    max-width: 800px;      /* ancho para lectura */
-    text-align: center;    /* texto centrado */
-    font-size: 1.2rem;
+    max-width: 900px;          /* este valor centra visualmente en pantallas grandes */
+    width: 100%;
+    font-size: 1.2rem;         /* mantiene el tamaño que ya tienes */
     line-height: 1.7;
-    color: #333;           /* color neutro que combina con tu paleta */
-    font-family: "Playfair Display", serif; /* mantiene tu estilo elegante */
-    padding: 0 20px;       /* espacio en móviles */
+    text-align: center;
+    color: #333;
+    font-family: "Playfair Display", serif;
+    padding: 0 20px;
 }
