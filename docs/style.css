@@ -1,0 +1,29 @@
+body {
+    background-color: #f3f3ee;
+
+.title {
+    text-align: center;
+    margin-top: 80px; 
+}
+
+.title h1 {
+    color: #ff186e;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+}
+
+.title h3 {
+    color: #000000;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 10px;
+}
+
+.intro {
+    width: 70%;
+    margin: 60px auto 40px auto;   /* MÁS espacio arriba */
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000000;
+    text-align: justify;
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.remote {
+    background: #222;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 24, 110, 0.5);
+    width: 200px;
+}
+
+.power-btn {
+    background: #ff186e;
+    color: white;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.power-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff186e;
+}
+
+p {
+    margin-top: 20px;
+    opacity: 0.8;
+}
