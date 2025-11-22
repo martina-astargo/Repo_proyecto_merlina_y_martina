@@ -25,20 +25,23 @@
 /* ------------------------- */
 /*          PÁRRAFO          */
 /* ------------------------- */
+/* ------------------------- */
+/*          PÁRRAFO          */
+/* ------------------------- */
 .contenido {
     width: 100%;
     display: flex;
-    justify-content: center;   /* centra el bloque completo */
+    justify-content: center;
     margin-top: 60px;
 }
 
 .contenido p {
-    max-width: 900px;          /* este valor centra visualmente en pantallas grandes */
+    max-width: 900px;
     width: 100%;
-    font-size: 1.2rem;         /* mantiene el tamaño que ya tienes */
+    font-size: 1.2rem;
     line-height: 1.7;
-    text-align: center;
+    text-align: justify;          /* JUSTIFICADO */
     color: #333;
-    font-family: "Playfair Display", serif;
+    font-family: "Courier New", monospace; /* COURIER NEW */
     padding: 0 20px;
 }
