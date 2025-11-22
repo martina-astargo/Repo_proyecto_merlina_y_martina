@@ -1,68 +1,40 @@
-/* ------------------------------
-   ESTILOS GENERALES
------------------------------- */
-
 body {
     background-color: #f3f3ee;
     margin: 0;
     padding: 0;
-    font-family: "Courier New", monospace;
+    font-family: "Roboto Mono", monospace;
     color: #000;
 }
 
 /* ------------------------------
    TÍTULO Y SUBTÍTULO
 ------------------------------ */
-
 .title {
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 40px; /* separa más del párrafo */
+    margin-top: 50px;
 }
 
 .title h1 {
-    font-size: 48px;
+    color: #ff186e;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
 .title h3 {
+    font-family: "Roboto Mono", monospace;
     font-size: 20px;
     margin-top: 0;
+    font-weight: 500;
 }
 
 /* ------------------------------
-   PÁRRAFO INTRO
+   INTRO
 ------------------------------ */
-
 .intro {
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    text-align: justify;
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
-
-/* ------------------------------
-   CARRUSEL (tarjetas)
------------------------------- */
-
-.carousel-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;  /* evita scroll vertical */
-    position: relative;
-    padding-bottom: 40px;
-}
-
-.carousel {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-item 
-    min-width: 280px;
-    backg
