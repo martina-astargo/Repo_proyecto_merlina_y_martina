@@ -1,1 +1,11 @@
-css grupallll
+.title h1 {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title h3 {
+    color: gray;
+    text-align: center;
+}
+
