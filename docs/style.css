@@ -1,32 +1,43 @@
-/* Centrar todo el bloque del título */
+/* ------------------------- */
+/*        TÍTULO Y SUBTÍTULO */
+/* ------------------------- */
+
 .title {
     text-align: center;
-    margin-top: 80px; /* opcional: separa el título del borde superior */
+    margin-top: 80px;   /* separación desde arriba */
+    margin-bottom: 60px; /* separación hacia el párrafo */
 }
 
-/* Título principal */
 .title h1 {
-    color: #ff186e;
+    color: #ff186e; /* tu color original */
     font-family: "Playfair Display", serif;
     margin: 0;
+    font-size: 3rem;
 }
 
-/* Subtítulo */
 .title h3 {
     color: #000000;
     font-family: "Roboto Mono", monospace;
     margin-top: 10px;
+    font-size: 1.3rem;
 }
+
+/* ------------------------- */
+/*          PÁRRAFO          */
+/* ------------------------- */
+
 .contenido {
-  max-width: 800px;
-  margin: 60px auto 0; /* 60px crea el espacio hacia abajo del título */
-  text-align: center;  /* Centra el texto */
-  padding: 0 20px;
+    width: 100%;
+    display: flex;            /* centra el párrafo */
+    justify-content: center;  /* centra horizontalmente */
 }
 
 .contenido p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: #333;
+    max-width: 800px;      /* ancho para lectura */
+    text-align: center;    /* texto centrado */
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #333;           /* color neutro que combina con tu paleta */
+    font-family: "Playfair Display", serif; /* mantiene tu estilo elegante */
+    padding: 0 20px;       /* espacio en móviles */
 }
-
