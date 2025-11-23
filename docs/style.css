@@ -38,10 +38,10 @@ body {
 
 .contenido {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;   /* <-- Aquí está la solución */
     margin-top: 60px;
 }
+
 
 .contenido p {
     max-width: 900px;
