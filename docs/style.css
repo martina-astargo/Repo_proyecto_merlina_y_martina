@@ -43,7 +43,7 @@ body {
 }
 
 .contenido p {
-    max-width: 1100px;   /* hace que tu texto sea más ancho */
+    max-width: 1200px;   /* hace que tu texto sea más ancho */
     width: 90%;          /* ocupa el 90% del ancho de la pantalla */
     font-size: 1.2rem;
     line-height: 1.7;
