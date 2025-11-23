@@ -1,15 +1,25 @@
 /* ------------------------- */
+/*       FONDO GENERAL       */
+/* ------------------------- */
+
+body {
+    background-color: #f3f3ee;   /* COLOR DE FONDO */
+    margin: 0;                  /* quita espacios blancos alrededor */
+    padding: 0;
+}
+
+/* ------------------------- */
 /*        TÍTULO Y SUBTÍTULO */
 /* ------------------------- */
 
 .title {
     text-align: center;
-    margin-top: 80px;   /* separación desde arriba */
-    margin-bottom: 60px; /* separación hacia el párrafo */
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .title h1 {
-    color: #ff186e; /* tu color original */
+    color: #ff186e;
     font-family: "Playfair Display", serif;
     margin: 0;
     font-size: 3rem;
@@ -25,9 +35,7 @@
 /* ------------------------- */
 /*          PÁRRAFO          */
 /* ------------------------- */
-/* ------------------------- */
-/*          PÁRRAFO          */
-/* ------------------------- */
+
 .contenido {
     width: 100%;
     display: flex;
@@ -40,8 +48,12 @@
     width: 100%;
     font-size: 1.2rem;
     line-height: 1.7;
-    text-align: justify;          /* JUSTIFICADO */
+    text-align: justify;
     color: #333;
-    font-family: "Courier New", monospace; /* COURIER NEW */
+    font-family: "Courier New", monospace;
     padding: 0 20px;
 }
+
+
+
+
