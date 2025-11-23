@@ -51,7 +51,7 @@ body {
     color: #333;
     font-family: "Courier New", monospace;
     padding: 0 20px;
-    margin: 0 auto 40px auto;  /* centra y separa los párrafos */
+    margin: 0 auto 15px auto;  /* ↓ antes 40px, ahora 15px */
 }
 
 
