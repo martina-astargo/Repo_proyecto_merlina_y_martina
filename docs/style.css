@@ -4,7 +4,7 @@
 
 body {
     background-color: #f3f3ee;   /* COLOR DE FONDO */
-    margin: 0;                  /* quita espacios blancos alrededor */
+    margin: 0;
     padding: 0;
 }
 
@@ -38,10 +38,9 @@ body {
 
 .contenido {
     width: 100%;
-    display: block;   /* <-- Aquí está la solución */
+    display: block;  /* asegura que los párrafos se apilen */
     margin-top: 60px;
 }
-
 
 .contenido p {
     max-width: 900px;
@@ -52,8 +51,8 @@ body {
     color: #333;
     font-family: "Courier New", monospace;
     padding: 0 20px;
+    margin: 0 auto 40px auto;  /* centra y separa los párrafos */
 }
-
 
 
 
