@@ -94,31 +94,6 @@ body {
     margin: 0 auto !important; /* fuerza el centrado del gráfico embebido */
 }
 
-/* Centrado forzado del gráfico Vega */
 #vis {
-    width: 100%;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;
     margin: 0 auto !important;
-}
-
-/* Centrar los div internos que Vega genera */
-#vis > * {
-    margin: 0 auto !important;
-}
-
-/* Por si Vega incrusta un canvas */
-#vis canvas {
-    display: block !important;
-    margin: 0 auto !important;
-}
-
-/* Por si el gráfico queda dentro de un wrapper adicional */
-#vis .vega-embed,
-#vis .chart-wrapper,
-#vis .vega-bindings {
-    margin: 0 auto !important;
-    text-align: center !important;
 }
