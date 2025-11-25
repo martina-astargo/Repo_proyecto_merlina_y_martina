@@ -97,3 +97,36 @@ body {
 #vis {
     margin: 0 auto !important;
 }
+* Centra la caja principal */
+/* 1. La caja padre: Ocupa todo el ancho y centra a sus hijos */
+/* 1. Usamos GRID, que es más fuerte para centrar */
+.contenedor-grafico {
+    display: grid !important;
+    place-items: center !important; /* El comando mágico de centrado */
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* 2. Reseteamos el gráfico para que se deje centrar */
+#vis {
+    width: auto !important;    /* Que tenga su ancho natural */
+    max-width: 100%;           /* Que no se salga en celulares */
+    display: flex !important;  /* Asegura compatibilidad interna */
+    justify-content: center !important;
+}
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+
+.contenedor-flourish {
+    /* 1. CONTROL DE TAMAÑO */
+    width: 80%;           /* Ocupa el 80% del ancho de la pantalla */
+    max-width: 800px;     /* Y que NUNCA pase de 800px (aquí controlas lo "pequeño") */
+    
+    /* 2. CENTRADO */
+    margin: 80px auto;    /* Espacio arriba/abajo y centrado automático */
+    display: block;
+}
