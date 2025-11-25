@@ -52,11 +52,14 @@
     <p>
   <meta charset="UTF-8">
   <style>
-    #vis.vega-embed {
-      width: 100%;
-      display: flex;
-    }
-
+   /* PEGA ESTO */
+#vis.vega-embed {
+  width: 100%;             /* Ocupa todo el ancho de la pantalla */
+  display: flex;           /* Activa el modo flexible */
+  justify-content: center; /* ESTO ES LO QUE LO CENTRA */
+  margin-top: 80px;        /* Espacio arriba */
+  margin-bottom: 80px;     /* Espacio abajo */
+}
     #vis.vega-embed details,
     #vis.vega-embed details summary {
       position: relative;
