@@ -130,3 +130,12 @@ body {
     margin: 80px auto;    /* Espacio arriba/abajo y centrado automático */
     display: block;
 }
+
+/* Esto centrará TODOS los h4 y h5 de tu página */
+h4, h5 {
+    text-align: center;   /* La orden de centrar */
+    display: block;       /* Asegura que ocupen el ancho */
+    margin-top: 40px;     /* Aire arriba */
+    margin-bottom: 20px;  /* Aire abajo */
+    color: #000;          /* Opcional: Asegura que sean negros (o el color que quieras) */
+}
