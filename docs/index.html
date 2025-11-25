@@ -54,19 +54,21 @@
   <style>
    
 /* Centra la caja principal */
+/* 1. La caja padre: Ocupa todo el ancho y centra a sus hijos */
 .contenedor-grafico {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center; /* ESTO es lo que centra */
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 100px;       /* Espacio arriba */
+    margin-bottom: 100px;    /* Espacio abajo */
 }
 
-/* Y ESTO ES LO IMPORTANTE: Fuerza al gráfico interno a centrarse también */
-#vis, .vega-embed {
-    display: flex !important;
-    justify-content: center !important;
-    width: 100%; /* Ocupa el espacio para poder centrar lo de adentro */
+/* 2. El hijo (el gráfico): NO debe ser del 100% */
+#vis {
+    width: auto !important;  /* Deja que el gráfico tenga su tamaño natural */
+    max-width: 100%;         /* Pero que no se salga en celulares */
+    display: flex;
+    justify-content: center;
 }
     #vis.vega-embed details,
     #vis.vega-embed details summary {
