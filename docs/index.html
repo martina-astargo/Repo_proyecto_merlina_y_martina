@@ -53,12 +53,20 @@
   <meta charset="UTF-8">
   <style>
    
+/* Centra la caja principal */
 .contenedor-grafico {
-    display: flex;             /* Activa el modo flexible */
-    justify-content: center;   /* Alinea todo al centro */
-    width: 100%;               /* Usa todo el ancho */
-    margin-top: 100px;         /* Aire arriba */
-    margin-bottom: 100px;      /* Aire abajo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Y ESTO ES LO IMPORTANTE: Fuerza al gráfico interno a centrarse también */
+#vis, .vega-embed {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%; /* Ocupa el espacio para poder centrar lo de adentro */
 }
     #vis.vega-embed details,
     #vis.vega-embed details summary {
