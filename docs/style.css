@@ -82,3 +82,14 @@ body {
     margin: 0 auto !important;  /* fuerza centrado */
 }
 
+/* Centrar completamente el gráfico Vega */
+#vis {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* centra horizontalmente */
+    margin: 40px 0;           /* espacio arriba y abajo */
+}
+
+#vis > div {
+    margin: 0 auto !important; /* fuerza el centrado del gráfico embebido */
+}
