@@ -55,20 +55,21 @@
    
 /* Centra la caja principal */
 /* 1. La caja padre: Ocupa todo el ancho y centra a sus hijos */
+/* 1. Usamos GRID, que es más fuerte para centrar */
 .contenedor-grafico {
-    display: flex;
-    justify-content: center; /* ESTO es lo que centra */
+    display: grid !important;
+    place-items: center !important; /* El comando mágico de centrado */
     width: 100%;
-    margin-top: 100px;       /* Espacio arriba */
-    margin-bottom: 100px;    /* Espacio abajo */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-/* 2. El hijo (el gráfico): NO debe ser del 100% */
+/* 2. Reseteamos el gráfico para que se deje centrar */
 #vis {
-    width: auto !important;  /* Deja que el gráfico tenga su tamaño natural */
-    max-width: 100%;         /* Pero que no se salga en celulares */
-    display: flex;
-    justify-content: center;
+    width: auto !important;    /* Que tenga su ancho natural */
+    max-width: 100%;           /* Que no se salga en celulares */
+    display: flex !important;  /* Asegura compatibilidad interna */
+    justify-content: center !important;
 }
     #vis.vega-embed details,
     #vis.vega-embed details summary {
