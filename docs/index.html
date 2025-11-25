@@ -49,34 +49,23 @@
         En este reportaje queremos analizar cómo esa representación ha ido cambiando desde 1970 hasta este año, generando un nuevo desarrollo de personajes. Abordaremos desde las portadas y directoras hasta conocer a esas protagonistas que recordamos hasta el día de hoy. 
     </p>
 
-<head>
-<meta charset="UTF-8">
-<style>
-/* --- AQUÍ EMPIEZA EL CAMBIO --- */
-#vis.vega-embed {
-    /* 1. Controlamos el ancho */
-    width: 90%;
-    max-width: 1000px;
+    <p>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
 
-    /* 2. Damos espacio (80px) y centramos (auto) */
-    margin: 80px auto;
-    
-    /* 3. Aseguramos que se comporte como bloque */
-    display: block;
-}
-/* --- AQUÍ TERMINA EL CAMBIO --- */
-
-#vis.vega-embed details,
-#vis.vega-embed details summary {
-    position: relative;
-}
-</style>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-</head>
-<body>
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+ </style>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <div id="vis"></div>
   <script>
     (function(vegaEmbed) {
@@ -97,7 +86,7 @@
     })(vegaEmbed);
 
   </script>
-</body>
+
     </p>
 
     <p>
