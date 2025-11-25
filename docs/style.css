@@ -132,7 +132,7 @@ body {
 }
 
 /* Esto centrará TODOS los h4 y h5 de tu página */
-h4, h5 {
+h4, h5, h6 {
     text-align: center;   /* La orden de centrar */
     display: block;       /* Asegura que ocupen el ancho */
     margin-top: 40px;     /* Aire arriba */
