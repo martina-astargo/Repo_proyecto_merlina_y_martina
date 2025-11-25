@@ -54,6 +54,23 @@ body {
     padding: 0 30px;           /* margen bonito a los lados */
 }
 
+/* ------------------------- */
+/*        GRÁFICO VEGA       */
+/* ------------------------- */
 
+#vis {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* CENTRA EL GRÁFICO */
+    margin: 40px 0;            /* separa del texto */
+}
+
+/* Limitar el tamaño del gráfico para que no se vea gigante */
+#vis canvas,
+#vis svg {
+    max-width: 700px;  /* puedes aumentarlo si quieres */
+    width: 100%;
+    height: auto;
+}
 
 
