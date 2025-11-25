@@ -71,10 +71,26 @@
     display: flex !important;  /* Asegura compatibilidad interna */
     justify-content: center !important;
 }
+
     #vis.vega-embed details,
     #vis.vega-embed details summary {
       position: relative;
     }
+
+    /* Nuevo estilo para los gráficos de Flourish */
+.contenedor-flourish {
+    /* 1. Ancho controlado: Ocupa el 90% para dejar aire a los lados */
+    width: 90%;
+    /* Opcional: Ponle un tope para que no se vea gigante en pantallas grandes */
+    max-width: 1000px; 
+
+    /* 2. La magia del centrado y espacio */
+    /* 80px arriba/abajo | auto a los lados (centrado) */
+    margin: 80px auto; 
+
+    /* 3. Asegurar comportamiento de bloque */
+    display: block;
+}
  </style>
   
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -158,7 +174,9 @@
         Las escenas muestran, de forma sencilla, la representación de las mujeres en momentos específicos y cómo han ido tomando voz para poder enfrentar los abusos ya sea de los esposos, hijos o patrones. Esto enseña que han variado los roles, pero que siguen dependiendo de alguna forma de los hombres. 
     </p>
 
-    <div class="flourish-embed flourish-scatter" data-src="visualisation/26124498"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26124498/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+    <div class="contenedor-flourish">
+    <div class="flourish-embed flourish-scatter" data-src="..."></div>
+    </div>
 
     <p>
         Han variado los roles, pero también el reparto femenino ha aumentado. En los personajes secundarios tienden a destacar más las mujeres y en los protagonistas los hombres, pero desde 1970 hasta la actualidad, si se ha mostrado un aumento en su participación actoral. 
