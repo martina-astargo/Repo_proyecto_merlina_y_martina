@@ -59,7 +59,7 @@ body {
       justify-content: center;
       align-items: center;
       display: flex;
-      margin: 40px auto;
+      margin: 0 auto;
     }
 
 #vis {
