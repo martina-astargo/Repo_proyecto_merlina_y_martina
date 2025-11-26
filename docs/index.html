@@ -221,7 +221,28 @@ Pero aún predominan las mujeres en temas de venganza, celos o envidia. Este ant
 La hipótesis se cumple, la representación estereotipada y secundaria de las mujeres chilenas en las teleseries ha disminuido a lo largo de los años, pero aún mantiene cierta necesidad de dependencia ya sea económica o emocional y la protección masculina de parejas, amigos o patrones. 
     </p>
 
-    </div> <!-- cierre del reportaje oculto -->
+  </div> <!-- cierre del reportaje oculto -->
+
+<script>
+const powerBtn = document.getElementById('powerBtn');
+const intro = document.getElementById('intro-container');
+const reportaje = document.getElementById('reportaje');
+const screen = document.getElementById('screen');
+
+powerBtn.addEventListener('click', () => {
+  screen.textContent = 'CARGANDO...';
+  screen.style.color = '#fff';
+
+  setTimeout(() => {
+    intro.style.display = 'none';
+    reportaje.style.display = 'block';
+  }, 1000);
+});
+</script>
+
+</body>
+</html>
+
 
 
 </body>
