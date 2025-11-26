@@ -54,7 +54,7 @@ body {
     padding: 0 30px;           /* margen bonito a los lados */
 }
 
-#vis {
+#vis_01{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
     width: 100%;
 }
 
-#vis > div {
+#vis_01 > div {
     margin: 0 auto !important;  /* fuerza centrado */
 }
 
@@ -90,15 +90,11 @@ body {
     margin: 40px 0;           /* espacio arriba y abajo */
 }
 
-#vis > div {
+#vis_02> div {
     margin: 0 auto !important; /* fuerza el centrado del gráfico embebido */
 }
 
-#vis {
-    margin: 0 auto !important;
 
-
-}
 * Centra la caja principal */
 /* 1. La caja padre: Ocupa todo el ancho y centra a sus hijos */
 /* 1. Usamos GRID, que es más fuerte para centrar */
