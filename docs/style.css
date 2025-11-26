@@ -86,6 +86,7 @@ body {
 
 #vis_02 {
       width: 100%;
+      height: fit-content;
       justify-content: center;
       align-items: center;
       display: flex;
