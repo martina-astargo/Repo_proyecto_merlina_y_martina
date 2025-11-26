@@ -83,7 +83,7 @@ body {
 }
 
 /* Centrar completamente el gráfico Vega */
-#vis {
+#vis_02 {
     width: 100%;
     display: flex;
     justify-content: center;  /* centra horizontalmente */
@@ -97,14 +97,6 @@ body {
 #vis {
     margin: 0 auto !important;
 
-#vis_2 > div {
-  display: flex;
-  justify-content: center;   /* centra horizontalmente */
-  /* si también quieres centrar verticalmente dentro del alto del contenedor: */
-  /* align-items: center; */
-  /* opcional: que ocupe todo el ancho disponible */
-  width: 100%;
-}
 
 }
 * Centra la caja principal */
