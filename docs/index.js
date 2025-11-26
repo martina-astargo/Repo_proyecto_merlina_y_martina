@@ -4,9 +4,11 @@ const intro = document.getElementById('intro-container');
 const reportaje = document.getElementById('reportaje');
 const screen = document.getElementById('screen');
 
-powerBtn.addEventListener('click', () => {
-  screen.textContent = 'CARGANDO...';
-  screen.style.color = '#fff';
+
+document.querySelector('.btn-start').addEventListener('click', goToHome);
+  function goToHome() {
+    window.location.href = 'index.html';  
+  }
 
   setTimeout(() => {
     intro.style.display = 'none';

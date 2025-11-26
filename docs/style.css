@@ -150,7 +150,7 @@ h4, h5, h6 {
 }
 
 .image-container {
-      width: 80%; /* Ajusta el tamaño de la imagen */
+      width: 60%; /* Ajusta el tamaño de la imagen */
       max-width: 600px;
       height: auto;
       margin-bottom: 20px;
