@@ -209,3 +209,12 @@ h4, h5, h6 {
 .btn-power:active {
   transform: scale(0.95);
 }
+
+.flourish-container {
+  text-align: center;
+}
+
+.flourish-embed {
+  max-width: 60%; /* Ajusta el tamaño al que prefieras */
+  margin: 0 auto;
+}
