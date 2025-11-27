@@ -3,7 +3,7 @@
 /* ------------------------- */
 
 body {
-    background-color: #f3f3ee;
+    background-color: #f3f3ee;   /* COLOR DE FONDO */
     margin: 0;
     padding: 0;
 }
@@ -38,21 +38,36 @@ body {
 
 .contenido {
     width: 100%;
-    display: block;
+    display: block;  /* asegura que los párrafos se apilen */
     margin-top: 60px;
 }
 
 .contenido p {
-    max-width: 1200px;
-    width: 90%;
+    max-width: 1200px;   /* hace que tu texto sea más ancho */
+    width: 90%;          /* ocupa el 90% del ancho de la pantalla */
     font-size: 1.2rem;
     line-height: 1.7;
     text-align: justify;
     color: #333;
     font-family: "Courier New", monospace;
-    font-weight: bold; /* APLICADO COURIER NEW EN NEGRITA */
-    margin: 0 auto 25px auto;
-    padding: 0 30px;
+    margin: 0 auto 25px auto;  /* centra y reduce separación */
+    padding: 0 30px;           /* margen bonito a los lados */
+}
+
+#vis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+}
+
+#vis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
 }
 
 #vis {
@@ -64,57 +79,65 @@ body {
 }
 
 #vis > div {
-    margin: 0 auto !important;
+    margin: 0 auto !important;  /* fuerza centrado */
 }
 
+/* Centrar completamente el gráfico Vega */
 #vis {
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    justify-content: center;  /* centra horizontalmente */
+    margin: 40px 0;           /* espacio arriba y abajo */
 }
 
 #vis > div {
-    margin: 0 auto !important;
+    margin: 0 auto !important; /* fuerza el centrado del gráfico embebido */
 }
 
 #vis {
     margin: 0 auto !important;
 }
-
+* Centra la caja principal */
+/* 1. La caja padre: Ocupa todo el ancho y centra a sus hijos */
+/* 1. Usamos GRID, que es más fuerte para centrar */
 .contenedor-grafico {
     display: grid !important;
-    place-items: center !important;
+    place-items: center !important; /* El comando mágico de centrado */
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
+/* 2. Reseteamos el gráfico para que se deje centrar */
 #vis {
-    width: auto !important;
-    max-width: 100%;
-    display: flex !important;
+    width: auto !important;    /* Que tenga su ancho natural */
+    max-width: 100%;           /* Que no se salga en celulares */
+    display: flex !important;  /* Asegura compatibilidad interna */
     justify-content: center !important;
 }
 
-#vis.vega-embed details,
-#vis.vega-embed details summary {
-    position: relative;
-}
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
 
 .contenedor-flourish {
-    width: 80%;
-    max-width: 800px;
-    margin: 80px auto;
+    /* 1. CONTROL DE TAMAÑO */
+    width: 80%;           /* Ocupa el 80% del ancho de la pantalla */
+    max-width: 800px;     /* Y que NUNCA pase de 800px (aquí controlas lo "pequeño") */
+    
+    /* 2. CENTRADO */
+    margin: 80px auto;    /* Espacio arriba/abajo y centrado automático */
     display: block;
 }
 
+/* Esto centrará TODOS los h4 y h5 de tu página */
 h4, h5, h6 {
-    text-align: center;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #000;
+    text-align: center;   /* La orden de centrar */
+    display: block;       /* Asegura que ocupen el ancho */
+    margin-top: 40px;     /* Aire arriba */
+    margin-bottom: 20px;  /* Aire abajo */
+    color: #000;          /* Opcional: Asegura que sean negros (o el color que quieras) */
 }
 
 /* --- TELE RETRO BONITA --- */
@@ -201,16 +224,19 @@ h4, h5, h6 {
   display: none;
 }
 
+/* Centra el gráfico */
 #vis_02 {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
+/* Evita que Vega-Lite se desborde */
 #vis_02 > div {
     max-width: 100%;
 }
 
+/* Responsivo para pantallas pequeñas */
 @media (max-width: 900px) {
     #vis_02 > div {
         width: 200% !important;
