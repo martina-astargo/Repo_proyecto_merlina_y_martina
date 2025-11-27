@@ -45,3 +45,14 @@ if (powerBtn) {
         }, 1000); 
     });
 }
+
+// --- LÓGICA PARA APAGAR LA TV ---
+const turnOffBtn = document.getElementById('turn-off-btn');
+const offEffect = document.getElementById('tv-off-effect');
+
+if (turnOffBtn) {
+    turnOffBtn.addEventListener('click', function() {
+        // Activamos la animación
+        offEffect.classList.add('apagar-animacion');
+    });
+}
