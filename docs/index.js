@@ -12,7 +12,7 @@ powerBtn.addEventListener('click', function() {
     tvImage.src = 'images/tv-on.png'; 
     
     // 2. Ocultamos el botón para que solo se vea la tele
-    powerBtn.style.display = 'none';
+    powerBtn.style.visibility = 'hidden';
 
     // 3. Esperamos 1.5 segundos (1500ms) viendo el logo
     setTimeout(function() {
