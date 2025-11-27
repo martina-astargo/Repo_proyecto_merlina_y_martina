@@ -7,31 +7,37 @@ const reportaje = document.getElementById('reportaje');
 if (powerBtn) {
     powerBtn.addEventListener('click', function() {
         
-        // 1. Ocultamos el botón (usando visibility para que no salte)
+        // 1. INMEDIATO: Escondemos el botón para que sepa que hizo clic
         powerBtn.style.visibility = 'hidden';
 
-        // 2. ¡ACCIÓN! Le ponemos la clase que hace el flashazo
-        tvImage.classList.add('efecto-encender');
-
-        // 3. Pequeño truco: Esperamos 150ms (milisegundos) a que el brillo esté alto
+        // 2. SUSPENSO: Esperamos 1 segundo (1000ms) con la tele apagada
         setTimeout(function() {
-            // AHORA cambiamos la imagen, cubiertos por el flash
-            tvImage.src = 'images/tv-on.png'; 
-        }, 150);
 
-        // 4. Esperamos 2 segundos para que se aprecie la intro
-        setTimeout(function() {
-            
-            // Desvanecer la pantalla completa
-            introContainer.style.opacity = '0';
-            
-            // Quitar intro y mostrar reportaje
+            // --- AQUÍ EMPIEZA LA MAGIA (después del segundo de espera) ---
+
+            // A. Lanzamos el flashazo
+            tvImage.classList.add('efecto-encender');
+
+            // B. Cambiamos la foto justo en el brillo máximo (150ms después del flash)
             setTimeout(function() {
-                introContainer.style.display = 'none';
-                reportaje.style.display = 'block'; 
-                window.scrollTo(0, 0);
-            }, 1000);
+                tvImage.src = 'images/tv-on.png'; 
+            }, 150);
 
-        }, 2000); // Le di un poquito más de tiempo (2s) para disfrutar el efecto
+            // C. Esperamos un rato a que vean el logo y luego entramos al sitio
+            setTimeout(function() {
+                
+                // Desvanecer la pantalla negra
+                introContainer.style.opacity = '0';
+                
+                // Quitar todo y mostrar el reportaje
+                setTimeout(function() {
+                    introContainer.style.display = 'none';
+                    reportaje.style.display = 'block'; 
+                    window.scrollTo(0, 0);
+                }, 1000);
+
+            }, 2500); // Tiempo para ver el logo encendido
+
+        }, 1000); // <--- ESTE ES EL SEGUNDO DE SILENCIO (SUSPENSO)
     });
 }
