@@ -245,13 +245,13 @@ h4, h5, h6 {
 }
 
 .flourish-outer {
-  width: 650px;      
-  margin: 0 auto;
-  overflow: hidden;  
+  width: 650px;
+  margin: 0 auto;  
+  overflow: hidden;
 }
 
 .flourish-scale {
-  width: 1200px;       
+  width: 1200px;
   transform: scale(0.55);
   transform-origin: top left;
 }
