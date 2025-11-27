@@ -349,7 +349,7 @@ h4, h5, h6 {
 .scroll-indicator {
     position: absolute;
     bottom: 30px; /* La pegamos abajo */
-    font-size: 2rem;
+    font-size: 4rem;
     color: #ff186e; /* Tu color rosado */
     animation: bounce 2s infinite;
     cursor: default;
