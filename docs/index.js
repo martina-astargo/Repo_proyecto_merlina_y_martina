@@ -1,16 +1,18 @@
-<script>
-const powerBtn = document.getElementById('powerBtn');
-const intro = document.getElementById('intro-container');
-const reportaje = document.getElementById('reportaje');
-const screen = document.getElementById('screen');
+window.onload = function() {
+  document.querySelector('.btn-start').addEventListener('click', goToHome);
 
-powerBtn.addEventListener('click', () => {
-  screen.textContent = 'CARGANDO...';
-  screen.style.color = '#fff';
+  function goToHome() {
+    window.location.href = 'index.html';
+  }
 
   setTimeout(() => {
-    intro.style.display = 'none';
-    reportaje.style.display = 'block';
+    // Aquí debes asegurarte de que los elementos `intro` y `reportaje` existan
+    let intro = document.querySelector('#intro-container');
+    let reportaje = document.querySelector('#reportaje');
+
+    if (intro && reportaje) {
+      intro.style.display = 'none';
+      reportaje.style.display = 'block';
+    }
   }, 1000);
-});
-</script>
+};
