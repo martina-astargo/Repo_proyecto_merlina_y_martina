@@ -30,13 +30,16 @@ if (powerBtn) {
                 // Desvanecer
                 introContainer.style.opacity = '0';
                 
-                // Entrar al reportaje
-                setTimeout(function() {
-                    introContainer.style.display = 'none';
-                    reportaje.style.display = 'block'; 
-                    window.scrollTo(0, 0);
-                }, 1000);
+               // Entrar al reportaje
+            setTimeout(function() {
+                introContainer.style.display = 'none';
+                reportaje.style.display = 'block';
+                window.scrollTo(0, 0);
+                
+                // --- PEGA ESTO AQUÍ ---
+                window.dispatchEvent(new Event('resize'));
 
+            }, 1000);
             }, 1500); // <--- ¡AQUÍ ESTÁ EL CAMBIO! (Más corto)
 
         }, 1000); 
