@@ -211,10 +211,12 @@ h4, h5, h6 {
 }
 
 .flourish-container {
-  text-align: center;
+  text-align: center; /* Esto centra el contenedor */
 }
 
 .flourish-embed {
-  max-width: 80%; /* Ajusta el tamaño al que prefieras */
-  margin: 0 auto;
+  max-width: 80%;  /* Ajusta el tamaño máximo */
+  width: 80%;      /* Define el ancho específico */
+  margin: 0 auto;  /* Centra el gráfico */
+  height: auto;    /* Ajusta la altura proporcionalmente */
 }
