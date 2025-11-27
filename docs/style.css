@@ -243,3 +243,14 @@ h4, h5, h6 {
         height: auto !important;
     }
 }
+
+.flourish-wrapper {
+  width: 900px;      /* ancho que Flourish “cree” que tiene */
+  margin: 0 auto;
+  overflow: hidden;  /* recorta lo que sobresalga */
+}
+
+.flourish-scale {
+  transform: scale(0.8);   /* 0.8 = 80% del tamaño; prueba 0.7, 0.6, etc. */
+  transform-origin: top left;
+}
