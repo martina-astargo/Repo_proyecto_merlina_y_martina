@@ -314,3 +314,48 @@ h4, h5, h6 {
         transform: scale(1);
     }
 }
+/* --- PORTADA DE PANTALLA COMPLETA --- */
+
+.full-screen-hero {
+    /* Esto hace que ocupe el 100% de la altura de la ventana */
+    min-height: 90vh; 
+    
+    /* Esto centra todo el contenido perfectamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    /* Un poco de margen para que no pegue con el texto de abajo */
+    margin-bottom: 50px; 
+}
+
+.title-content {
+    text-align: center;
+    padding: 0 20px;
+    /* Animación de entrada suave */
+    animation: fadeUp 1.5s ease-out;
+}
+
+/* Animación de entrada para el título */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- FLECHITA QUE REBOTA --- */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px; /* La pegamos abajo */
+    font-size: 2rem;
+    color: #ff186e; /* Tu color rosado */
+    animation: bounce 2s infinite;
+    cursor: default;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
