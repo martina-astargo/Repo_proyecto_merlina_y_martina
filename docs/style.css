@@ -215,6 +215,6 @@ h4, h5, h6 {
 }
 
 .flourish-embed {
-  max-width: 60%; /* Ajusta el tamaño al que prefieras */
+  max-width: 80%; /* Ajusta el tamaño al que prefieras */
   margin: 0 auto;
 }
