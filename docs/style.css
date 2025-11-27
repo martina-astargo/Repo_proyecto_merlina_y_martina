@@ -427,3 +427,13 @@ h4, h5, h6 {
         width: 100%; height: 100%; transform: none; 
     }
 }
+
+.flourish-wrapper {
+  width: 600px;       
+  margin: 0 auto;      
+  overflow: hidden;    
+}
+
+.flourish-embed {
+  width: 100%;         
+}
