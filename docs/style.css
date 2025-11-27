@@ -276,16 +276,19 @@ h4, h5, h6 {
 #power-btn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #ff186e; /* Tu color rosado fucsia */
+    background-color: #ff186e;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Courier New', monospace; /* Tu fuente estilo guion */
+    font-family: 'Courier New', monospace;
     text-transform: uppercase;
     font-weight: bold;
     transition: transform 0.2s, background-color 0.2s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    /* --- ESTA ES LA LÍNEA MÁGICA --- */
+    margin-bottom: 150px; 
 }
 
 #power-btn:hover {
