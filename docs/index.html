@@ -44,25 +44,6 @@
 </head>
 
 <body>
-
-<div id="intro-container">
-  <!-- Imagen que se muestra al inicio -->
-  <img src="images/image.jpg" alt="Imagen de inicio" class="image-container">
-
-  <button class="btn-start">Iniciar</button>
-</div>
-
-<script>
-  <script src="index.js" defer></script>
-  function goToHome() {
-    // Redirige al archivo index.html
-    window.location.href = 'index.html';
-  }
-</script>
-</body>
-
-<body>
-<!-- INICIO DEL REPORTAJE (se ocultará al principio) -->
 <div id="reportaje">
   
 
@@ -285,26 +266,6 @@
 
 
   </div> <!-- cierre del reportaje oculto -->
-
-<script>
-const powerBtn = document.getElementById('powerBtn');
-const intro = document.getElementById('intro-container');
-const reportaje = document.getElementById('reportaje');
-const screen = document.getElementById('screen');
-
-powerBtn.addEventListener('click', () => {
-  screen.textContent = 'CARGANDO...';
-  screen.style.color = '#fff';
-
-  setTimeout(() => {
-    intro.style.display = 'none';
-    reportaje.style.display = 'block';
-  }, 1000);
-});
-</script>
-
-</body>
-</html>
 
 
 
