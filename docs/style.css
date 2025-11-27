@@ -245,6 +245,6 @@ h4, h5, h6 {
 }
 
 .flourish-outer {
-  max-width: 700px;   /* o 700px, el ancho que te gustó */
+  max-width: 650px;   /* o 700px, el ancho que te gustó */
   margin: 0 auto;     /* esto lo centra */
 }
