@@ -22,14 +22,14 @@ body {
     color: #ff186e;
     font-family: "Playfair Display", serif;
     margin: 0;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 .title h3 {
     color: #000000;
     font-family: "Roboto Mono", monospace;
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 /* ------------------------- */
@@ -316,19 +316,20 @@ h4, h5, h6 {
 }
 /* --- PORTADA DE PANTALLA COMPLETA --- */
 
+/* --- PORTADA DE PANTALLA COMPLETA --- */
+
 .full-screen-hero {
-    /* Esto hace que ocupe el 100% de la altura de la ventana */
     min-height: 90vh; 
-    
-    /* Esto centra todo el contenido perfectamente */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     
-    /* Un poco de margen para que no pegue con el texto de abajo */
-    margin-bottom: 50px; 
+    /* --- ESTO ES LO NUEVO PARA ARREGLARLO --- */
+    margin: 0 !important;   /* Borra el margen antiguo de 80px */
+    padding: 0 !important;  /* Asegura que no haya rellenos raros */
+    width: 100%;            /* Asegura que use todo el ancho */
 }
 
 .title-content {
