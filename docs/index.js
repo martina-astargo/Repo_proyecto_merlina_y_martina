@@ -4,30 +4,34 @@ const powerBtn = document.getElementById('power-btn');
 const introContainer = document.getElementById('intro-container');
 const reportaje = document.getElementById('reportaje');
 
-// Escuchamos el clic en el botón
-powerBtn.addEventListener('click', function() {
-    
-    // 1. Cambiamos la imagen a la TV ENCENDIDA (ruta correcta)
-    // Asegúrate de que el nombre del archivo sea exacto (mayúsculas/minúsculas)
-    tvImage.src = 'images/tv-on.png'; 
-    
-    // 2. Ocultamos el botón para que solo se vea la tele
-    powerBtn.style.visibility = 'hidden';
+if (powerBtn) {
+    powerBtn.addEventListener('click', function() {
+        
+        // 1. Ocultamos el botón (usando visibility para que no salte)
+        powerBtn.style.visibility = 'hidden';
 
-    // 3. Esperamos 1.5 segundos (1500ms) viendo el logo
-    setTimeout(function() {
-        
-        // Hacemos que la intro se desvanezca
-        introContainer.style.opacity = '0';
-        
-        // Cuando termine de desvanecerse (1 seg), la quitamos y mostramos el reportaje
+        // 2. ¡ACCIÓN! Le ponemos la clase que hace el flashazo
+        tvImage.classList.add('efecto-encender');
+
+        // 3. Pequeño truco: Esperamos 150ms (milisegundos) a que el brillo esté alto
         setTimeout(function() {
-            introContainer.style.display = 'none';
-            reportaje.style.display = 'block'; 
-            
-            // Un pequeño truco para asegurar que el reportaje se vea bien
-            window.scrollTo(0, 0);
-        }, 1000);
+            // AHORA cambiamos la imagen, cubiertos por el flash
+            tvImage.src = 'images/tv-on.png'; 
+        }, 150);
 
-    }, 1500); 
-});
+        // 4. Esperamos 2 segundos para que se aprecie la intro
+        setTimeout(function() {
+            
+            // Desvanecer la pantalla completa
+            introContainer.style.opacity = '0';
+            
+            // Quitar intro y mostrar reportaje
+            setTimeout(function() {
+                introContainer.style.display = 'none';
+                reportaje.style.display = 'block'; 
+                window.scrollTo(0, 0);
+            }, 1000);
+
+        }, 2000); // Le di un poquito más de tiempo (2s) para disfrutar el efecto
+    });
+}
