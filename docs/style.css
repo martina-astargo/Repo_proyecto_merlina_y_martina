@@ -319,7 +319,7 @@ h4, h5, h6 {
 /* --- PORTADA DE PANTALLA COMPLETA --- */
 
 .full-screen-hero {
-    min-height: 90vh; 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
