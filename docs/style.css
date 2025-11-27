@@ -244,8 +244,16 @@ h4, h5, h6 {
     }
 }
 
-.flourish-outer {
-  max-width: 800px;   
-  margin: 0 auto;    
-  zoom: 0.5;          
+.flourish-wrapper {
+  width: 800px;       
+  margin: 0 auto;     
+  overflow: hidden;   
+  position: relative;
+}
+
+.flourish-embed {
+  transform: scale(0.6);  
+  transform-origin: top left; 
+  width: 100%;      
+  height: auto;     
 }
