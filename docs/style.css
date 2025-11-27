@@ -428,13 +428,16 @@ h4, h5, h6 {
     }
 }
 
-.flourish-embed {
-  width: 100%;         /* Esto asegura que la visualización ocupe el 100% del espacio disponible */
-  max-width: 1000px;   /* Controla el ancho máximo, puedes ajustarlo */
-  margin: 0 auto;      /* Esto lo centra horizontalmente */
+.flourish-wrapper {
+  display: flex;           /* Usamos flexbox para asegurar que las tarjetas estén alineadas horizontalmente */
+  flex-wrap: wrap;         /* Permite que las tarjetas pasen a una nueva línea si no caben */
+  justify-content: space-between; /* Espacio entre las tarjetas */
+  gap: 10px;               /* Ajusta el espacio entre las tarjetas */
+  max-width: 1000px;       /* Ajusta el tamaño máximo según lo que necesites */
+  margin: 0 auto;          /* Centra las tarjetas en la página */
 }
 
-.flourish-cards {
-  display: block;      /* Asegura que el gráfico no se deforme */
-  width: 100%;         /* El gráfico ocupa todo el ancho del contenedor */
+.flourish-embed {
+  width: 48%;              /* Esto controla que cada tarjeta ocupe el 48% del espacio */
+  margin-bottom: 20px;     /* Agrega un poco de espacio por debajo de cada tarjeta */
 }
