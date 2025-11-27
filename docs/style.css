@@ -295,3 +295,22 @@ h4, h5, h6 {
     transform: scale(1.05);
     background-color: #d60045; /* Un rosa más oscuro al pasar el mouse */
 }
+/* --- ANIMACIÓN DE ENCENDIDO --- */
+.efecto-encender {
+    animation: encender-tv 0.5s ease-out forwards;
+}
+
+@keyframes encender-tv {
+    0% {
+        filter: brightness(0.2); /* Empieza oscuro */
+        transform: scale(0.98);
+    }
+    40% {
+        filter: brightness(2.5); /* ¡FLASH DE LUZ! (Brilla mucho) */
+        transform: scale(1.02);
+    }
+    100% {
+        filter: brightness(1);   /* Se normaliza */
+        transform: scale(1);
+    }
+}
