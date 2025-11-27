@@ -226,9 +226,10 @@ h4, h5, h6 {
 
 /* Centra el gráfico */
 #vis_02 {
+    width: 80%;         /* <--- ESTO LO HACE MÁS ANGOSTO (Puedes probar 70% u 85%) */
+    margin: 20px auto;  /* <--- "auto" A LOS LADOS ES LO QUE LO CENTRA */
     display: flex;
     justify-content: center;
-    margin: 20px 0;
 }
 
 /* Evita que Vega-Lite se desborde */
@@ -239,12 +240,7 @@ h4, h5, h6 {
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 900px) {
     #vis_02 > div {
-        width: 200% !important;
+        width: 100% !important;
         height: auto !important;
     }
-}
-
-.flourish-outer {
-  max-width: 650px;   /* o 700px, el ancho que te gustó */
-  margin: 0 auto;     /* esto lo centra */
 }
