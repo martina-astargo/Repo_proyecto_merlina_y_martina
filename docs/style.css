@@ -245,13 +245,6 @@ h4, h5, h6 {
 }
 
 .flourish-outer {
-  width: 650px;
-  margin: 0 auto;  
-  overflow: hidden;
-}
-
-.flourish-scale {
-  width: 1200px;
-  transform: scale(0.55);
-  transform-origin: top left;
+  max-width: 700px;   /* o 700px, el ancho que te gustó */
+  margin: 0 auto;     /* esto lo centra */
 }
