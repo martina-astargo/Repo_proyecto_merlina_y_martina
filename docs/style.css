@@ -215,8 +215,8 @@ h4, h5, h6 {
 }
 
 .flourish-embed {
-  max-width: 80%;  /* Ajusta el tamaño máximo */
-  width: 80%;      /* Define el ancho específico */
-  margin: 0 auto;  /* Centra el gráfico */
-  height: auto;    /* Ajusta la altura proporcionalmente */
+  max-width: 80%;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 500px; /* Ajusta la altura según lo necesario */
 }
