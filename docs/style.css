@@ -429,15 +429,20 @@ h4, h5, h6 {
 }
 
 .flourish-wrapper {
-  display: flex;           /* Usamos flexbox para asegurar que las tarjetas estén alineadas horizontalmente */
-  flex-wrap: wrap;         /* Permite que las tarjetas pasen a una nueva línea si no caben */
-  justify-content: space-between; /* Espacio entre las tarjetas */
-  gap: 10px;               /* Ajusta el espacio entre las tarjetas */
-  max-width: 1000px;       /* Ajusta el tamaño máximo según lo que necesites */
-  margin: 0 auto;          /* Centra las tarjetas en la página */
+  display: flex;           /* Alineación horizontal */
+  flex-wrap: wrap;         /* Permite que salten de línea si no caben */
+  justify-content: center; /* Las centra correctamente */
+  gap: 20px;               /* Espacio entre elementos internos */
+  max-width: 950px;        /* Ajusta tamaño máximo (puedes cambiarlo) */
+  margin: 0 auto;          /* Centra el bloque en la página */
+  overflow: hidden;        /* Evita el espacio vacío */
+  position: relative;      /* Necesario para evitar desalineación con transform */
 }
 
 .flourish-embed {
-  width: 60%;              /* Esto controla que cada tarjeta ocupe el 48% del espacio */
-  margin-bottom: 20px;     /* Agrega un poco de espacio por debajo de cada tarjeta */
+  width: 100%;                   /* Se adapta al contenedor */
+  transform: scale(0.9);         /* Ajusta tamaño visual */
+  transform-origin: top center;  /* Se escala desde el centro */
+  margin: 0 auto;                /* Asegura centrado */
+  display: block;                /* Para que margin:auto funcione */
 }
