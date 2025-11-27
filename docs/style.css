@@ -245,7 +245,7 @@ h4, h5, h6 {
 }
 
 .flourish-wrapper {
-  width: 700px;      /* ancho que Flourish “cree” que tiene */
+  width: 800px;      /* ancho que Flourish “cree” que tiene */
   margin: 0 auto;
   overflow: hidden;  /* recorta lo que sobresalga */
 }
