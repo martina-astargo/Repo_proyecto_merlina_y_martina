@@ -7,37 +7,38 @@ const reportaje = document.getElementById('reportaje');
 if (powerBtn) {
     powerBtn.addEventListener('click', function() {
         
-        // 1. INMEDIATO: Escondemos el botón para que sepa que hizo clic
+        // 1. INMEDIATO: Escondemos el botón
         powerBtn.style.visibility = 'hidden';
 
-        // 2. SUSPENSO: Esperamos 1 segundo (1000ms) con la tele apagada
+        // 2. SUSPENSO: Esperamos 1 segundo con la pantalla negra
         setTimeout(function() {
 
-            // --- AQUÍ EMPIEZA LA MAGIA (después del segundo de espera) ---
-
-            // A. Lanzamos el flashazo
+            // --- MAGIA ---
+            
+            // A. Flashazo
             tvImage.classList.add('efecto-encender');
 
-            // B. Cambiamos la foto justo en el brillo máximo (150ms después del flash)
+            // B. Ponemos la imagen de la TV prendida
             setTimeout(function() {
                 tvImage.src = 'images/tv-on.png'; 
             }, 150);
 
-            // C. Esperamos un rato a que vean el logo y luego entramos al sitio
+            // C. DURACIÓN DE LA TELE PRENDIDA (Aquí hicimos el cambio)
+            // Antes era 2500, ahora es 1500 (1.5 segundos) para que sea más rápido
             setTimeout(function() {
                 
-                // Desvanecer la pantalla negra
+                // Desvanecer
                 introContainer.style.opacity = '0';
                 
-                // Quitar todo y mostrar el reportaje
+                // Entrar al reportaje
                 setTimeout(function() {
                     introContainer.style.display = 'none';
                     reportaje.style.display = 'block'; 
                     window.scrollTo(0, 0);
                 }, 1000);
 
-            }, 2500); // Tiempo para ver el logo encendido
+            }, 1500); // <--- ¡AQUÍ ESTÁ EL CAMBIO! (Más corto)
 
-        }, 1000); // <--- ESTE ES EL SEGUNDO DE SILENCIO (SUSPENSO)
+        }, 1000); 
     });
 }
