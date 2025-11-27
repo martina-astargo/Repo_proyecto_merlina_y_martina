@@ -433,12 +433,11 @@ h4, h5, h6 {
   flex-wrap: wrap;         /* Permite que las tarjetas pasen a una nueva línea si no caben */
   justify-content: space-between; /* Espacio entre las tarjetas */
   gap: 10px;               /* Ajusta el espacio entre las tarjetas */
-  width: 850px;       /* Ajusta el tamaño máximo según lo que necesites */
+  max-width: 1000px;       /* Ajusta el tamaño máximo según lo que necesites */
   margin: 0 auto;          /* Centra las tarjetas en la página */
 }
 
 .flourish-embed {
-  width: 100%;              /* Esto controla que cada tarjeta ocupe el 48% del espacio */
-  margin-bottom: 20px;
-  transform-origin: top left;     /* Agrega un poco de espacio por debajo de cada tarjeta */
+  width: 60%;              /* Esto controla que cada tarjeta ocupe el 48% del espacio */
+  margin-bottom: 20px;     /* Agrega un poco de espacio por debajo de cada tarjeta */
 }
