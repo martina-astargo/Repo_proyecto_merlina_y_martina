@@ -428,7 +428,8 @@ h4, h5, h6 {
     }
 }
 
-.flourish-embed {
+.flourish-wrapper {
   max-width: 900px;
   margin: 0 auto;
 }
+     /* Necesario para evitar desalineación con transform */
