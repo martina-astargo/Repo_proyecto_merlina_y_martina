@@ -128,7 +128,7 @@ body {
     max-width: 800px;     /* Y que NUNCA pase de 800px (aquí controlas lo "pequeño") */
     
     /* 2. CENTRADO */
-    margin: 80px auto;    /* Espacio arriba/abajo y centrado automático */
+    margin: 60px auto;    /* Espacio arriba/abajo y centrado automático */
     display: block;
 }
 
