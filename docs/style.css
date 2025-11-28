@@ -228,7 +228,7 @@ h4, h5, h6 {
 /* Centra el gráfico */
 #vis_02 {
     width: 80%;         /* <--- ESTO LO HACE MÁS ANGOSTO (Puedes probar 70% u 85%) */
-    margin: 20px auto;  /* <--- "auto" A LOS LADOS ES LO QUE LO CENTRA */
+    margin: 60px auto;  /* <--- "auto" A LOS LADOS ES LO QUE LO CENTRA */
     display: flex;
     justify-content: center;
 }
