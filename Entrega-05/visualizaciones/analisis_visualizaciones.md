@@ -3,7 +3,7 @@
 Los gráficos funcionan como aporte para mostrar de forma directa los cambios que han ocurrido a lo largo de los años. Nuestra primera visualización es una muestra de las 255 teleseries diferenciadas por cada canal de televisión, contabilizadas en nuestra base de datos. Esto es netamente para que los usuarios puedan saber cuáles teleseries analizamos y un muestrario general y directo. 
 
 Después, comenzamos a realizar nuestros gráficos en base a la submuestra con 29 teleseries. Mostramos los roles/funciones que repite más cada género. Por ejemplo: ¿quiénes son más protagonistas, antagonistas o personajes secundarios? La idea es que el usuario pueda ver directamente si los protagonistas son más hombres o mujeres, y así en cada uno. Acá se muestra que los hombres tienden a ser más protagonistas, y las mujeres más personajes secundarios. En antagonistas se mantiene un equilibrio.
-_Aún nos falta poder agregar lineas divisorias al gráfico, pero es que no lo pude hacer en altair). Queríamos probar si es que ahí se dispersaban los puntos._
+_Aún nos falta poder agregar el gráfico y hacerle unos retoques, porque al intentar agregarlo, la página tuvo un "crasheo", se desconfiguró **absolutamente todo**. Aun así, dejaré el gráfico en la carpeta para que lo vea). Queríamos probar si es que ahí se dispersaban los puntos._
 
 Considerando lo anterior, decidimos hacer un clic más allá, mostrando en qué tipos de trama hay más protagonismo femenino o masculino, demostrando que entre los 80-90, el drama estaba relacionado con las mujeres. Entre 2020 y 2025, el drama y comedia también lo protagonizan mujeres. Así se van destacando las tramas analizadas y la relación directa con los géneros.
 

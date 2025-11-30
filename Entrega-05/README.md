@@ -8,6 +8,8 @@ Esto sí se demostró, porque efectivamente la representación estereotipada o s
 
 En las portadas ya se ve un cambio en la representación femenina a lo largo de los años, ahora aparecen más en la portada o toman roles significativos que afectan la trama.
 
+_**Algo importante:** Por temas de tiempo, no alcanzamos a realizar la herramienta que mostrará las escenas, pero para la entrega final, lo agregaríamos sin falta. Además (esto lo expliqué en el readme de visualizaciones, pero igual lo destaco aquí como parte de nuestro proceso), no agregamos la visualización del gráfico 2 que muestra a protagonistas, antagonistas y personajes secundarios porque al agregarlo, se eliminió/cambió todo lo de la página web, no entendí porqué, literal lo hice igual que siempre. Pero por lo mismo no quisimos correr más riesgos._
+
 **Tabla de autoría**
 
 1. Visualizaciones (gráficos presentados): Martina
