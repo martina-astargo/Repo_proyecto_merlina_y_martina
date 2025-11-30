@@ -1,0 +1,11 @@
+<h1> Visualizaciones </h1>
+
+Los gráficos funcionan como aporte para mostrar de forma directa los cambios que han ocurrido a lo largo de los años. Nuestra primera visualización es una muestra de las 255 teleseries diferenciadas por cada canal de televisión, contabilizadas en nuestra base de datos. Esto es netamente para que los usuarios puedan saber cuáles teleseries analizamos y un muestrario general y directo. 
+
+Después, comenzamos a realizar nuestros gráficos en base a la submuestra con 29 teleseries. Mostramos los roles/funciones que repite más cada género. Por ejemplo: ¿quiénes son más protagonistas, antagonistas o personajes secundarios? La idea es que el usuario pueda ver directamente si los protagonistas son más hombres o mujeres, y así en cada uno. Acá se muestra que los hombres tienden a ser más protagonistas, y las mujeres más personajes secundarios. En antagonistas se mantiene un equilibrio.
+
+Considerando lo anterior, decidimos hacer un clic más allá, mostrando en qué tipos de trama hay más protagonismo femenino o masculino, demostrando que entre los 80-90, el drama estaba relacionado con las mujeres. Entre 2020 y 2025, el drama y comedia también lo protagonizan mujeres. Así se van destacando las tramas analizadas y la relación directa con los géneros.
+
+El último gráfico, indica algo más profundo. Tomamos las tramas y las fuerzas que actúan de cada personaje, por ejemplo la venganza, los celos, el poder, etc. Y eso, lo juntamos en tres grupos: dominante (que agrupa a personajes líderes, decisivos y con poder económico o social), conflictivo (que reúne a personajes perjudicados, celosos o emocionalmente afectados) y emotivo (vinculado a emociones como el enamoramiento, la búsqueda de justicia, la venganza u obligaciones afectivas). En el gráfico se puede notar que las mujeres tienden a ser más dominantes y emotivas, y los hombres más conflictivos, aunque anduvieron muy parejos, algo que no esperábamos. 
+
+En conclusión, los últimos tres gráficos, muestran más a profundidad el análisis de los personajes y la relación con las tramas, aumento de mujeres y relación con las fuerzas que actúan (lo que conecta con los estereotipos que se tienden a hacer). 
