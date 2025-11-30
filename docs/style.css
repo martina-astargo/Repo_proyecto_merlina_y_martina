@@ -246,6 +246,25 @@ h4, h5, h6 {
     }
 }
 
+#vis_02 {
+    width: 80%;         /* <--- ESTO LO HACE MÁS ANGOSTO (Puedes probar 70% u 85%) */
+    margin: 60px auto;  /* <--- "auto" A LOS LADOS ES LO QUE LO CENTRA */
+    display: flex;
+    justify-content: center;
+}
+
+/* Evita que Vega-Lite se desborde */
+#vis_02 > div {
+    max-width: 100%;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 900px) {
+    #vis_02 > div {
+        width: 100% !important;
+        height: auto !important;
+    }
+
 /* --- ESTILOS DE LA TELEVISIÓN (INTRO) --- */
 
 #intro-container {
