@@ -28,7 +28,7 @@
       position: relative;
     }
 
-        #vis_02.vega-embed {
+        #vis_04.vega-embed {
       width: 100%;
       display: flex;
     }
@@ -241,8 +241,8 @@
                           + '</div>');
           throw error;
       }
-      const el = document.getElementById('vis');
-      vegaEmbed("#vis", spec, embedOpt)
+      const el = document.getElementById('vis_04');
+      vegaEmbed("#vis_04", spec, embedOpt)
         .catch(error => showError(el, error));
     })(vegaEmbed);
   </script>
