@@ -482,3 +482,9 @@ h4, h5, h6 {
     line-height: 1.4;
     font-weight: 400;
 }
+/* Ajuste para subir el número 17 */
+.numero-arriba {
+    position: relative;
+    bottom: 15px; /* Esto lo sube 15 píxeles. Si es mucho, prueba con 10px */
+    font-size: 1.1em; /* (Opcional) Lo hace un pelín más grande para compensar */
+}
