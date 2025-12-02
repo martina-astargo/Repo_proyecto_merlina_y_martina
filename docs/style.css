@@ -441,10 +441,11 @@ h4, h5, h6 {
     display: block;    /* Asegura que se comporte como bloque */
 }
 
-/* --- FRANJA DESTACADA --- */
+/* --- FRANJA DE DATO (ESTILO ROBOTO MONO) --- */
+
 .franja-destacada {
     width: 100%;
-    background-color: #fafaf6;
+    background-color: #fafaf6; /* Color lino suave (casi blanco) */
     padding: 60px 0;
     margin: 60px 0;
     display: flex;
@@ -457,28 +458,25 @@ h4, h5, h6 {
     max-width: 900px;
 }
 
-/* --- AQUÍ JUNTAMOS LAS PALABRAS --- */
+/* Alineación de SOLO y 17 */
 .encabezado-dato {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    
-    /* ESTE ES EL ESPACIO: Lo bajé a 10px para que estén cerquita */
-    gap: 10px; 
-    
-    margin-bottom: 15px;
+    gap: 20px; /* Espacio entre SOLO y 17 */
+    margin-bottom: 20px;
     line-height: 1;
 }
 
-/* ESTILO ÚNICO PARA "SOLO" Y "17" (IGUALES) */
+/* ESTILO DE LAS LETRAS GIGANTES (ROBOTO) */
 .titulo-gigante {
-    font-family: "Playfair Display", serif; /* Los dos elegantes */
-    font-weight: 400; /* Normal */
-    font-size: 7rem;
-    color: #ff186e;   /* Rosado */
+    font-family: "Roboto Mono", monospace; /* <--- AQUÍ VOLVIMOS A ROBOTO */
+    font-weight: 700; /* Bien negrita */
+    font-size: 7rem;  /* Tamaño gigante */
+    color: #ff186e;   /* Tu color rosado */
 }
 
-/* TEXTO DE ABAJO */
+/* Texto de abajo */
 .dato-texto {
     font-family: "Roboto Mono", monospace;
     font-size: 1.8rem;
@@ -486,12 +484,16 @@ h4, h5, h6 {
     text-transform: uppercase;
     line-height: 1.4;
     font-weight: 400;
+    letter-spacing: 1px;
 }
 
-/* Celulares */
+/* Ajuste para celulares */
 @media (max-width: 768px) {
     .encabezado-dato {
         flex-direction: column;
-        gap: 0;
+        gap: 10px;
+    }
+    .titulo-gigante {
+        font-size: 5rem;
     }
 }
