@@ -463,12 +463,11 @@ h4, h5, h6 {
 
 .dato-numero {
     display: block;
-    /* CAMBIO 1: Playfair Display para el número */
-    font-family: "Playfair Display", serif; 
-    font-style: normal;      /* Aseguramos que NO sea cursiva */
+    /* CAMBIO: Volvemos a tu fuente técnica */
+    font-family: "Roboto Mono", monospace; 
     font-size: 7rem;
     color: #ff186e;
-    font-weight: 700;
+    font-weight: 700; /* Bien negrita */
     line-height: 1;
     margin-bottom: 15px;
 }
@@ -481,10 +480,4 @@ h4, h5, h6 {
     text-transform: uppercase;
     line-height: 1.4;
     font-weight: 400;
-}
-/* Ajuste para subir el número 17 */
-.numero-arriba {
-    position: relative;
-    bottom: 15px; /* Esto lo sube 15 píxeles. Si es mucho, prueba con 10px */
-    font-size: 1.1em; /* (Opcional) Lo hace un pelín más grande para compensar */
 }
