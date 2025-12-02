@@ -472,7 +472,7 @@ h4, h5, h6 {
 .titulo-gigante {
     font-family: "Roboto Mono", monospace; /* <--- AQUÍ VOLVIMOS A ROBOTO */
     font-weight: 700; /* Bien negrita */
-    font-size: 4.5rem;  /* Tamaño gigante */
+    font-size: 4rem;  /* Tamaño gigante */
     color: #ff186e;   /* Tu color rosado */
 }
 
