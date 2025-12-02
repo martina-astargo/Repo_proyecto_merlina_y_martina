@@ -8,6 +8,8 @@ Esto sí se demostró, porque efectivamente la representación estereotipada o s
 
 En las portadas ya se ve un cambio en la representación femenina a lo largo de los años, ahora aparecen más en la portada o toman roles significativos que afectan la trama.
 
+Además, al presionar el botón de apagar, llevará a un fondo negro, pero decidimos incorporar un botón de volver a ver para que el usuario pudiera entrar nuevamente a la página web sin problema. 
+
 _**Algo importante:** Por temas de tiempo, no alcanzamos a realizar la herramienta que mostrará las escenas, pero para la entrega final, lo agregaríamos sin falta. Además (esto lo expliqué en el readme de visualizaciones, pero igual lo destaco aquí como parte de nuestro proceso), no agregamos la visualización del gráfico 2 que muestra a protagonistas, antagonistas y personajes secundarios porque al agregarlo, se eliminió/cambió todo lo de la página web, no entendí porqué, literal lo hice igual que siempre. Pero por lo mismo no quisimos correr más riesgos._
 
 **Tabla de autoría**
@@ -16,7 +18,7 @@ _**Algo importante:** Por temas de tiempo, no alcanzamos a realizar la herramien
 
 2. Herramientas (personajes femeninos, directoras, portadas): Martina
 
-3. Botón inicio y cierre (y todo el desarrollo de inicio y cierre): Merlina
+3. Botón inicio, cierre y volver a ver (y todo el desarrollo de inicio y cierre): Merlina
 
 4. Desarrollo general página web: Merlina y Martina
 
