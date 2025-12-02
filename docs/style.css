@@ -497,3 +497,28 @@ h4, h5, h6 {
         font-size: 5rem;
     }
 }
+/* --- BOTÓN DE REINICIO (SOBRE NEGRO) --- */
+#turn-on-again-btn {
+    position: absolute;       /* Para poder centrarlo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ff186e; /* Borde rosado */
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    
+    display: none;   /* Empieza oculto, el JS lo mostrará */
+    z-index: 10002;  /* Encima de todo */
+}
+
+#turn-on-again-btn:hover {
+    background-color: #ff186e;
+    box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
+}

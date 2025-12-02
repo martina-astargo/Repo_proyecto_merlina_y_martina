@@ -46,13 +46,35 @@ if (powerBtn) {
     });
 }
 
-// --- LÓGICA PARA APAGAR LA TV ---
+// --- LÓGICA PARA APAGAR Y PRENDER DE NUEVO ---
+
 const turnOffBtn = document.getElementById('turn-off-btn');
 const offEffect = document.getElementById('tv-off-effect');
+const turnOnAgainBtn = document.getElementById('turn-on-again-btn');
 
+// 1. APAGAR LA TELE
 if (turnOffBtn) {
     turnOffBtn.addEventListener('click', function() {
-        // Activamos la animación
+        // Activamos la animación de apagado
         offEffect.classList.add('apagar-animacion');
+
+        // Esperamos 1.5 segundos (cuando ya esté todo negro) para mostrar el botón de volver
+        setTimeout(() => {
+            if(turnOnAgainBtn) turnOnAgainBtn.style.display = 'block';
+        }, 1500);
+    });
+}
+
+// 2. VOLVER A VER (REINICIAR)
+if (turnOnAgainBtn) {
+    turnOnAgainBtn.addEventListener('click', function() {
+        // Ocultamos este botón
+        turnOnAgainBtn.style.display = 'none';
+        
+        // Quitamos la negrura (el efecto)
+        offEffect.classList.remove('apagar-animacion');
+        
+        // Subimos al inicio de la página suavemente
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
