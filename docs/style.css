@@ -440,16 +440,11 @@ h4, h5, h6 {
     margin: 50px auto; /* Centrado automático y espacio arriba/abajo */
     display: block;    /* Asegura que se comporte como bloque */
 }
-/* --- ESTILO DATO DESTACADO (VERSIÓN ELEGANTE) --- */
-/* --- FRANJA DE DATO (COLOR VAINILLA) --- */
 
-
-   /* --- FRANJA DE DATO (ESTILO MIXTO) --- */
-
-/* --- FRANJA DESTACADA (CONTENEDOR PRINCIPAL) --- */
+/* --- FRANJA DESTACADA --- */
 .franja-destacada {
     width: 100%;
-    background-color: #fafaf6; /* Tu color lino */
+    background-color: #fafaf6;
     padding: 60px 0;
     margin: 60px 0;
     display: flex;
@@ -462,34 +457,28 @@ h4, h5, h6 {
     max-width: 900px;
 }
 
-/* --- AQUÍ ESTÁ EL TRUCO DE LA UNIÓN --- */
+/* --- AQUÍ JUNTAMOS LAS PALABRAS --- */
 .encabezado-dato {
-    display: flex;              /* Los pone uno al lado del otro */
-    justify-content: center;    /* Los centra */
-    align-items: baseline;      /* ALINEA LA BASE DE LAS LETRAS (Clave) */
-    gap: 25px;                  /* <--- ESTE ES EL ESPACIO ENTRE "SOLO" Y "17" */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+    /* ESTE ES EL ESPACIO: Lo bajé a 10px para que estén cerquita */
+    gap: 10px; 
+    
     margin-bottom: 15px;
     line-height: 1;
 }
 
-/* Estilo para "SOLO" (Elegante) */
-.palabra-solo {
-    font-family: "Playfair Display", serif;
-    font-weight: 400; /* Normal, no negrita */
+/* ESTILO ÚNICO PARA "SOLO" Y "17" (IGUALES) */
+.titulo-gigante {
+    font-family: "Playfair Display", serif; /* Los dos elegantes */
+    font-weight: 400; /* Normal */
     font-size: 7rem;
-    color: #ff186e;
-    letter-spacing: -2px; /* Junta un poquito las letras de S O L O */
+    color: #ff186e;   /* Rosado */
 }
 
-/* Estilo para "17" (Técnico) */
-.numero-17 {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 700; /* Negrita */
-    font-size: 7rem;
-    color: #ff186e;
-}
-
-/* Estilo del texto de abajo */
+/* TEXTO DE ABAJO */
 .dato-texto {
     font-family: "Roboto Mono", monospace;
     font-size: 1.8rem;
@@ -499,10 +488,10 @@ h4, h5, h6 {
     font-weight: 400;
 }
 
-/* --- AJUSTE PARA CELULARES (Para que no se rompa) --- */
+/* Celulares */
 @media (max-width: 768px) {
     .encabezado-dato {
-        flex-direction: column; /* En celus, uno arriba del otro */
+        flex-direction: column;
         gap: 0;
     }
 }
