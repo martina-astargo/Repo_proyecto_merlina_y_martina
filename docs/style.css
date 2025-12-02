@@ -367,12 +367,12 @@ h4, h5, h6 {
 #turn-off-btn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #ff186e; /* Tu rosado */
+    background-color: #ff186e;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Courier New', monospace; /* <--- CAMBIADO */
     text-transform: uppercase;
     font-weight: bold;
     transition: transform 0.2s;
@@ -499,25 +499,25 @@ h4, h5, h6 {
 }
 /* --- BOTÓN DE REINICIO (SOBRE NEGRO) --- */
 #turn-on-again-btn {
-    position: absolute;       /* Para poder centrarlo */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrado perfecto */
+    transform: translate(-50%, -50%);
     
     padding: 15px 30px;
     font-size: 1.5rem;
     background-color: transparent;
     color: white;
-    border: 2px solid #ff186e; /* Borde rosado */
+    border: 2px solid #ff186e;
     border-radius: 8px;
     cursor: pointer;
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Courier New', monospace; /* <--- CAMBIADO */
     text-transform: uppercase;
+    font-weight: bold; /* Le agregué negrita para que se lea mejor en Courier */
     
-    display: none;   /* Empieza oculto, el JS lo mostrará */
-    z-index: 10002;  /* Encima de todo */
+    display: none;
+    z-index: 10002;
 }
-
 #turn-on-again-btn:hover {
     background-color: #ff186e;
     box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
