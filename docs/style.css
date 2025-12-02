@@ -440,3 +440,30 @@ h4, h5, h6 {
     margin: 50px auto; /* Centrado automático y espacio arriba/abajo */
     display: block;    /* Asegura que se comporte como bloque */
 }
+/* --- CUÑA DE DATO DESTACADO --- */
+.cuna-dato {
+    font-family: 'Roboto Mono', monospace; /* La fuente que pediste */
+    text-align: center;       /* Todo centrado */
+    max-width: 800px;         /* Que no se estire demasiado a los lados */
+    margin: 60px auto;        /* Buen espacio arriba y abajo para separar */
+    padding: 30px 20px;       /* Aire interno */
+    border-top: 3px solid #333;    /* Línea negra arriba */
+    border-bottom: 3px solid #333; /* Línea negra abajo */
+    background-color: transparent; /* O puedes poner #fff si quieres fondo blanco */
+}
+
+.cuna-numero {
+    font-size: 5rem;          /* Número GIGANTE */
+    color: #ff186e;           /* Tu color rosado de énfasis */
+    font-weight: bold;
+    display: block;           /* Para que ocupe su propia línea */
+    line-height: 1;           /* Para que no tenga tanto espacio extra */
+    margin-bottom: 10px;
+}
+
+.cuna-texto {
+    font-size: 1.5rem;        /* Texto grande y legible */
+    color: #000;              /* Negro puro para contraste */
+    text-transform: uppercase; /* Mayúsculas para más impacto (opcional) */
+    line-height: 1.4;
+}
