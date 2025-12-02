@@ -443,12 +443,12 @@ h4, h5, h6 {
 /* --- ESTILO DATO DESTACADO (VERSIÓN ELEGANTE) --- */
 /* --- FRANJA DE DATO (COLOR VAINILLA) --- */
 
+
+   /* --- FRANJA DE DATO (ESTILO MIXTO) --- */
+
 .franja-destacada {
     width: 100%;
-    
-    /* CAMBIO DE COLOR AQUÍ: Tono Vainilla Suave */
-    background-color: #fafaf6; 
-    
+    background-color: #fafaf6; /* El tono lino clarito que te gustó */
     padding: 60px 0;
     margin: 60px 0;
     display: flex;
@@ -458,20 +458,24 @@ h4, h5, h6 {
 
 .dato-contenido {
     text-align: center;
-    font-family: "Roboto Mono", monospace;
     max-width: 900px;
 }
 
 .dato-numero {
     display: block;
+    /* CAMBIO 1: Playfair Display para el número */
+    font-family: "Playfair Display", serif; 
+    font-style: normal;      /* Aseguramos que NO sea cursiva */
     font-size: 7rem;
-    color: #ff186e; /* Tu rosado */
+    color: #ff186e;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 15px;
 }
 
 .dato-texto {
+    /* CAMBIO 2: Roboto Mono para el texto de abajo */
+    font-family: "Roboto Mono", monospace; 
     font-size: 1.8rem;
     color: #000;
     text-transform: uppercase;
