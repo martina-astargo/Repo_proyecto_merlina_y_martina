@@ -441,35 +441,38 @@ h4, h5, h6 {
     display: block;    /* Asegura que se comporte como bloque */
 }
 /* --- ESTILO DATO DESTACADO (VERSIÓN ELEGANTE) --- */
-/* --- FRANJA DE DATO ANCHO COMPLETO --- */
+/* --- FRANJA DE DATO (COLOR VAINILLA) --- */
 
 .franja-destacada {
-    width: 100%;             /* Ocupa todo el ancho de la pantalla */
-    background-color: #ffffff; /* FONDO BLANCO (Suave resalte sobre el beige) */
-    padding: 60px 0;         /* Aire arriba y abajo dentro de la franja */
-    margin: 60px 0;          /* Separación con el resto de la página */
+    width: 100%;
+    
+    /* CAMBIO DE COLOR AQUÍ: Tono Vainilla Suave */
+    background-color: #fff6e0; 
+    
+    padding: 60px 0;
+    margin: 60px 0;
     display: flex;
-    justify-content: center; /* Centra el contenido */
+    justify-content: center;
     align-items: center;
 }
 
 .dato-contenido {
     text-align: center;
-    font-family: "Roboto Mono", monospace; /* CAMBIO: Volvimos a Roboto */
+    font-family: "Roboto Mono", monospace;
     max-width: 900px;
 }
 
 .dato-numero {
     display: block;
-    font-size: 7rem;       /* Número GIGANTE */
-    color: #ff186e;        /* Tu color rosado */
+    font-size: 7rem;
+    color: #ff186e; /* Tu rosado */
     font-weight: 700;
     line-height: 1;
     margin-bottom: 15px;
 }
 
 .dato-texto {
-    font-size: 1.8rem;     /* Texto grande */
+    font-size: 1.8rem;
     color: #000;
     text-transform: uppercase;
     line-height: 1.4;
