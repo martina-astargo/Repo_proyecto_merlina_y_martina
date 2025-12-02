@@ -441,30 +441,37 @@ h4, h5, h6 {
     display: block;    /* Asegura que se comporte como bloque */
 }
 /* --- ESTILO DATO DESTACADO (VERSIÓN ELEGANTE) --- */
-.cuna-dato {
-    /* CAMBIO 1: Fuente Playfair Display */
-    font-family: "Playfair Display", serif; 
+/* --- FRANJA DE DATO ANCHO COMPLETO --- */
+
+.franja-destacada {
+    width: 100%;             /* Ocupa todo el ancho de la pantalla */
+    background-color: #ffffff; /* FONDO BLANCO (Suave resalte sobre el beige) */
+    padding: 60px 0;         /* Aire arriba y abajo dentro de la franja */
+    margin: 60px 0;          /* Separación con el resto de la página */
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center;
+}
+
+.dato-contenido {
     text-align: center;
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-    /* CAMBIO 2: Sin bordes (borramos las líneas) */
-    border: none; 
+    font-family: "Roboto Mono", monospace; /* CAMBIO: Volvimos a Roboto */
+    max-width: 900px;
 }
 
-.cuna-numero {
+.dato-numero {
     display: block;
-    font-size: 7rem;       /* Lo agrandé un poquito más para compensar la falta de líneas */
-    color: #ff186e;        /* Tu rosado */
-    font-weight: 700;      /* Negrita fuerte */
+    font-size: 7rem;       /* Número GIGANTE */
+    color: #ff186e;        /* Tu color rosado */
+    font-weight: 700;
     line-height: 1;
-    margin-bottom: 10px;
-    font-family: "Playfair Display", serif; /* El número también en Playfair */
+    margin-bottom: 15px;
 }
 
-.cuna-texto {
-    font-size: 2rem;       /* Letra más grande para que se lea bien */
+.dato-texto {
+    font-size: 1.8rem;     /* Texto grande */
     color: #000;
-    line-height: 1.3;
-    font-style: italic;    /* El toque elegante: letra cursiva/itálica */
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-weight: 400;
 }
