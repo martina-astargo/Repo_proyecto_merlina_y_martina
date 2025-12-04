@@ -445,12 +445,16 @@ h4, h5, h6 {
 
 .franja-destacada {
     width: 100%;
-    background-color: #fafaf6; /* Color lino suave (casi blanco) */
+    background-color: #fafaf6; 
     padding: 60px 0;
     margin: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* --- AGREGA ESTO --- */
+    border-top: 1px solid #dcdcd5;    /* Línea suave arriba */
+    border-bottom: 1px solid #dcdcd5; /* Línea suave abajo */
 }
 
 .dato-contenido {
@@ -523,40 +527,3 @@ h4, h5, h6 {
     box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
 }
 
-/* --- EFECTO DE ESTÁTICA / RUIDO DE TV --- */
-
-#intro-container::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    
-    /* Esto genera los "puntitos" de la tele sin descargar imágenes */
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
-    
-    /* Aquí controlas la intensidad: 
-       0.05 es muy suave, 0.15 es más fuerte */
-    opacity: 0.08; 
-    
-    pointer-events: none; /* Para que puedas seguir haciendo clic en el botón */
-    z-index: 0; /* Se queda detrás del botón y la imagen */
-    
-    /* La animación que lo hace vibrar */
-    animation: tv-static 0.2s steps(4) infinite;
-}
-
-/* Para que la imagen y el botón queden ENCIMA del ruido */
-#intro-container > * {
-    position: relative;
-    z-index: 2;
-}
-
-@keyframes tv-static {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(-10%, 5%); }
-    50% { transform: translate(5%, -10%); }
-    75% { transform: translate(-5%, 10%); }
-    100% { transform: translate(10%, -5%); }
-}
