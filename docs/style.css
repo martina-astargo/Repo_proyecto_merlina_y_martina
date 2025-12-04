@@ -429,12 +429,16 @@ h4, h5, h6 {
 
 .franja-destacada {
     width: 100%;
-    background-color: #fafaf6; /* Color lino suave (casi blanco) */
+    background-color: #fafaf6; 
     padding: 60px 0;
     margin: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* --- AGREGA ESTO --- */
+    border-top: 1px solid #dcdcd5;    /* Línea suave arriba */
+    border-bottom: 1px solid #dcdcd5; /* Línea suave abajo */
 }
 
 .dato-contenido {
@@ -506,3 +510,4 @@ h4, h5, h6 {
     background-color: #ff186e;
     box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
 }
+
