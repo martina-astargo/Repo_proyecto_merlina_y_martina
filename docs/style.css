@@ -55,23 +55,7 @@ body {
   font-weight: bold;  /* <--- AGREGA ESTA LÍNEA AQUÍ */
   }
 
-#vis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-    width: 100%;
-}
-
-#vis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-    width: 100%;
-}
-
-#vis {
+#vis, #vis_01, #vis_02, #vis_04{
     display: flex;
     justify-content: center;
     align-items: center;
