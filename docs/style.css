@@ -511,3 +511,15 @@ h4, h5, h6 {
     box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
 }
 
+.flourish-wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.flourish-embed {
+  transform: scale(0.85);
+  transform-origin: top center;
+  width: 100%;
+  height: 85%; /* ESTA LÍNEA ACHICA EL ESPACIO REAL */
+}
