@@ -661,16 +661,29 @@ body {
 .retro-tv::after { left: 70px; }
 .retro-tv::before { right: 70px; }
 
-/* Descripción */
+/* --- ESTILO TARJETA DE GUION (Limpio y elegante) --- */
 #videoDescription {
-  margin: 25px auto;
-  font-family: "Roboto Mono", monospace;
-  text-align: center;
-  font-size: 17px;
-  color: #3b385f;
-  font-weight: 400;
-  line-height: 1.6;
-  max-width: 80%;
+  /* 1. Hacemos que parezca una nota de papel */
+  background-color: #ffffff; 
+  padding: 20px 25px;
+  
+  /* 2. Lo pegamos a la tele (mismo ancho) */
+  width: 500px;      /* El mismo ancho que tu .tv-frame */
+  max-width: 90%;    /* Para que no se salga en celular */
+  margin: 10px auto 30px auto; /* Centrado */
+  
+  /* 3. Tipografía técnica limpia */
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: left; /* Se lee mejor alineado a la izquierda */
+  
+  /* 4. El detalle de diseño: Borde rosado al lado */
+  border-left: 5px solid #ff186e; 
+  
+  /* 5. Sombra muy suave para que no se vea plano */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 
