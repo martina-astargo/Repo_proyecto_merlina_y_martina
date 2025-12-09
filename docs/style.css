@@ -661,16 +661,48 @@ body {
 .retro-tv::after { left: 70px; }
 .retro-tv::before { right: 70px; }
 
-/* Descripción */
+/* --- EL TEXTO AHORA ES UN DECODIFICADOR --- */
 #videoDescription {
-  margin: 25px auto;
-  font-family: "Roboto Mono", monospace;
-  text-align: center;
-  font-size: 17px;
-  color: #3b385f;
-  font-weight: 400;
-  line-height: 1.6;
-  max-width: 80%;
+  /* 1. La caja */
+  background-color: #2a2a2a; /* Gris oscuro tipo aparato */
+  color: #fff;               /* Letra blanca */
+  border: 4px solid #531788; /* Borde morado para combinar con la tele */
+  border-radius: 15px;       /* Bordes curvos */
+  
+  /* 2. Tamaño y posición */
+  max-width: 500px;          /* Un poco más angosto que la tele */
+  margin: 20px auto;         /* Centrado */
+  padding: 20px;             /* Espacio interior */
+  
+  /* 3. Estilo de letra */
+  font-family: "Courier New", monospace; /* Letra tipo máquina/digital */
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;          /* Mejor lectura a la izquierda */
+  
+  /* 4. Sombra para profundidad */
+  box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+  
+  /* 5. Detalle decorativo (luz de encendido) */
+  position: relative;
+}
+
+/* Una lucecita roja de "REC" o "POWER" en la esquina */
+#videoDescription::before {
+  content: "● REC";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ff186e; /* Tu color rosado neón */
+  font-size: 0.8rem;
+  font-weight: bold;
+  animation: parpadeo 2s infinite;
+}
+
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
 }
 
 
