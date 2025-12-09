@@ -190,56 +190,36 @@
 
   <div class="viewer-box">
 
-    <!-- TV Retro -->
     <div class="retro-tv">
+      
       <div class="tv-screen">
         <img id="thumbImage" src="" alt="Miniatura">
         <div class="play-icon">▶</div>
       </div>
 
       <div class="tv-panel">
-        <div class="tv-dial"></div>
-        <div class="tv-dial"></div>
-
-        <div class="tv-dots">
-          <span></span><span></span><span></span><span></span>
+        
+        <div class="tv-dials-group">
+            <div class="tv-dial"></div>
+            <div class="tv-dial"></div>
         </div>
 
         <div class="tv-lines">
-          <div></div>
-          <div></div>
-          <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
-    </div>
 
-    <!-- Descripción -->
+        <div class="tv-controls-panel">
+            <button class="panel-btn" onclick="prevVideo()" title="Anterior">◀</button>
+            <button class="panel-btn ok" onclick="openVideo()">VER</button>
+            <button class="panel-btn" onclick="nextVideo()" title="Siguiente">▶</button>
+        </div>
+
+      </div> </div> 
     <p id="videoDescription"></p>
 
-   <div class="tv-panel">
-    <div class="tv-dials-group">
-        <div class="tv-dial"></div>
-        <div class="tv-dial"></div>
-    </div>
-
-    <div class="tv-lines">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="tv-controls-panel">
-        
-        <button class="panel-btn" onclick="prevVideo()" title="Anterior">◀</button>
-        
-        <button class="panel-btn ok" onclick="openVideo()">VER</button>
-        
-        <button class="panel-btn" onclick="nextVideo()" title="Siguiente">▶</button>
-        
-    </div>
 </div>
-
-  </div>
 
 </body>
 </html>
