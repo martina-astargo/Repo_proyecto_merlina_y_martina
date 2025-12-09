@@ -774,57 +774,44 @@ body {
 
 /* --- NUEVOS CONTROLES EN EL PANEL --- */
 
-/* Organizamos el panel para que todo quepa verticalmente */
+/* --- PANEL LATERAL ORDENADO --- */
 .tv-panel {
+  /* 1. Definimos el espacio */
+  background: #531788;
+  border-radius: 25px;
+  padding: 15px;
+  border: 4px solid #f3d74c;
+  
+  /* 2. La Magia del Orden Vertical */
+  display: flex;
+  flex-direction: column;       /* Uno arriba del otro */
+  justify-content: space-evenly; /* Distribuye el espacio sobrante equitativamente */
+  align-items: center;          /* Todo centrado horizontalmente */
+  
+  /* 3. Aseguramos que ocupe su altura completa */
+  height: 100%; 
+  min-height: 380px; /* Altura mínima para que quepan los botones */
+}
+
+/* Ajuste para el grupo de diales (para que no se separen mucho) */
+.tv-dials-group {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuye espacio: Arriba, Medio, Abajo */
-  align-items: center;
-  padding: 10px;
-}
-
-/* Contenedor de los botones */
-.tv-controls-panel {
-  display: flex;
-  flex-direction: column; /* Botones uno arriba del otro (tipo cambio de canal) */
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 10px;
+}
+
+/* Ajuste para las líneas decorativas */
+.tv-lines {
   width: 100%;
-  align-items: center;
+  margin: 10px 0;
 }
 
-/* Estilo de los Botones de la Tele */
-.panel-btn {
-  width: 50px;
-  height: 50px;
-  background-color: #222; /* Botón negro plástico */
-  border: 3px solid #111; /* Borde oscuro para relieve */
-  border-radius: 50%;     /* Redondos */
-  color: #f3d74c;         /* Flecha amarilla */
-  font-size: 1.2rem;
-  cursor: pointer;
-  box-shadow: 0 4px 0 #000; /* Efecto 3D de botón alto */
-  transition: transform 0.1s, box-shadow 0.1s;
-  
+/* Ajuste para que los botones no se peguen a los bordes */
+.tv-controls-panel {
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
   align-items: center;
-}
-
-/* Efecto al presionar el botón */
-.panel-btn:active {
-  transform: translateY(4px); /* Se hunde */
-  box-shadow: 0 0 0 #000;     /* Desaparece la sombra */
-}
-
-/* El botón VER (OK) un poco distinto */
-.panel-btn.ok {
-  width: 70px;            /* Más ancho */
-  border-radius: 10px;    /* Cuadrado redondeado */
-  background-color: #f3d74c; /* Amarillo */
-  color: #3b385f;         /* Letra morada */
-  font-weight: bold;
-  font-family: "Courier New", monospace;
-  font-size: 1rem;
-  border-color: #c9b030;
 }
