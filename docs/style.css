@@ -741,6 +741,10 @@ body {
     opacity: 0.1; 
     
     z-index: -1; /* Se manda al fondo, detrás del texto */
+
+    /* Esto hace que la imagen se borre suavemente hacia abajo */
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     
     /* Opcional: Esto la pone en blanco y negro automáticamente */
     filter: grayscale(100%); 
