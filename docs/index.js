@@ -78,3 +78,58 @@ if (turnOnAgainBtn) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
+
+const videos = [
+  {
+    id: "sXN7Ba8pgcE",
+    desc: "En El señor de la querencia: Leonor, esposa del patrón, encara a Leotina por haberle dicho algo malo a su hija. Los personajes femeninos se tratan de prostitutas."
+  },
+  {
+    id: "KFzPgJGVAbk",
+    desc: "En La Fiera: Martín se despide de Catalina Chamorro, pero ella está decidida en ir a buscarlo. Personaje femenino toma decisiones y es protagonista de su propia trama."
+  },
+  {
+    id: "sMyioNy7kvQ"
+    desc: "En Pituca sin lucas: Fidel termina con Margarita porque se enamoró de Belén. Desde ahí los personajes femeninos se convierten en enemigas."
+  }, 
+  {
+    id: "hFWPv1LVLBA"
+    desc: "En Papá a la deriva: Camila se atreve a pedirle pololeo a Cristóbal. El personaje femenino toma la iniciativa y participa activamente en la trama por un objetivo."
+  }, 
+  {
+    id: "r7qoeEaUiVc"
+    desc: "En Isla Paraíso: Óscar León se entera que Carolina está casada con otro hombre. Rompe todo, grita y llora desconsoladamente. El personaje masculino enfrenta el rol de desesperación emocional, que está siempre asociado a las mujeres."
+  }, 
+  {
+    id: "010i6DU7AJQ"
+    desc: "En Papá a la deriva: Camila se pone celosa de Bárbara. Los personajes fememinos son enemigas durante toda la trama por Cristóbal."
+  }
+];
+
+let index = 0;
+
+function loadThumbnail() {
+  const video = videos[index];
+
+  document.getElementById("thumbImage").src =
+    `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+
+  document.getElementById("videoDescription").textContent = video.desc;
+}
+
+function nextVideo() {
+  index = (index + 1) % videos.length;
+  loadThumbnail();
+}
+
+function prevVideo() {
+  index = (index - 1 + videos.length) % videos.length;
+  loadThumbnail();
+}
+
+function openVideo() {
+  const video = videos[index];
+  window.open(`https://www.youtube.com/watch?v=${video.id}`, "_blank");
+}
+
+loadThumbnail();
