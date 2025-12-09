@@ -216,18 +216,28 @@
     <!-- Descripción -->
     <p id="videoDescription"></p>
 
-    <!-- Control remoto -->
-    <div class="remote">
-      <button class="arrow up" onclick="prevVideo()">▲</button>
-
-      <div class="middle-row">
-        <button class="arrow left" onclick="prevVideo()">◄</button>
-        <button class="ok-btn" onclick="openVideo()">OK</button>
-        <button class="arrow right" onclick="nextVideo()">►</button>
-      </div>
-
-      <button class="arrow down" onclick="nextVideo()">▼</button>
+   <div class="tv-panel">
+    <div class="tv-dials-group">
+        <div class="tv-dial"></div>
+        <div class="tv-dial"></div>
     </div>
+
+    <div class="tv-lines">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="tv-controls-panel">
+        
+        <button class="panel-btn" onclick="prevVideo()" title="Anterior">◀</button>
+        
+        <button class="panel-btn ok" onclick="openVideo()">VER</button>
+        
+        <button class="panel-btn" onclick="nextVideo()" title="Siguiente">▶</button>
+        
+    </div>
+</div>
 
   </div>
 

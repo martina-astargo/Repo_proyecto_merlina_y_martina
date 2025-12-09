@@ -541,21 +541,23 @@ body {
   text-align: center;
 }
 
-/* === CONTENEDOR === */
+/* 1. Agrandamos el contenedor general */
 .viewer-box {
-  width: 500px;
+  width: 800px; /* Antes 500px */
+  max-width: 95%; /* Para que no se salga en celulares */
   margin: 40px auto;
   padding: 20px;
 }
 
-/* === TV RETRO === */
+/* 2. Agrandamos la Tele */
 .retro-tv {
-  width: 550px;
+  width: 750px; /* Antes 550px (¡Ahora es gigante!) */
+  height: 450px; /* Le damos altura fija para que no se deforme */
   margin: 0 auto;
   display: flex;
   background: #3b385f;
   border-radius: 40px;
-  padding: 18px;
+  padding: 25px; /* Un poco más de marco */
   border: 8px solid #531788;
   position: relative;
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
@@ -770,3 +772,59 @@ body {
     z-index: 2; 
 }
 
+/* --- NUEVOS CONTROLES EN EL PANEL --- */
+
+/* Organizamos el panel para que todo quepa verticalmente */
+.tv-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye espacio: Arriba, Medio, Abajo */
+  align-items: center;
+  padding: 10px;
+}
+
+/* Contenedor de los botones */
+.tv-controls-panel {
+  display: flex;
+  flex-direction: column; /* Botones uno arriba del otro (tipo cambio de canal) */
+  gap: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Estilo de los Botones de la Tele */
+.panel-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #222; /* Botón negro plástico */
+  border: 3px solid #111; /* Borde oscuro para relieve */
+  border-radius: 50%;     /* Redondos */
+  color: #f3d74c;         /* Flecha amarilla */
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #000; /* Efecto 3D de botón alto */
+  transition: transform 0.1s, box-shadow 0.1s;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Efecto al presionar el botón */
+.panel-btn:active {
+  transform: translateY(4px); /* Se hunde */
+  box-shadow: 0 0 0 #000;     /* Desaparece la sombra */
+}
+
+/* El botón VER (OK) un poco distinto */
+.panel-btn.ok {
+  width: 70px;            /* Más ancho */
+  border-radius: 10px;    /* Cuadrado redondeado */
+  background-color: #f3d74c; /* Amarillo */
+  color: #3b385f;         /* Letra morada */
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  border-color: #c9b030;
+}
