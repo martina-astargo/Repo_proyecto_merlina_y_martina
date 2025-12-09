@@ -511,6 +511,17 @@ h4, h5, h6 {
     box-shadow: 0 0 20px #ff186e; /* Efecto de brillo neón */
 }
 
+#turn-off-btn {
+  position: relative;
+  z-index: 10000;
+}
+
+#turn-on-again-btn {
+  position: relative;
+  z-index: 10000;
+}
+
+
 .flourish-wrapper {
   max-width: 650px;
   margin: 0 auto;

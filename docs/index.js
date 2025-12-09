@@ -48,7 +48,7 @@ if (powerBtn) {
 
 // --- LÓGICA PARA APAGAR Y PRENDER DE NUEVO ---
 
-const turnOffBtn = document.getElementById('turn-off-btn');
+const turnOffBtn = document.querySelector('.turn-off-btn');
 const offEffect = document.getElementById('tv-off-effect');
 const turnOnAgainBtn = document.getElementById('turn-on-again-btn');
 
@@ -103,6 +103,14 @@ const videos = [
   {
     id: "010i6DU7AJQ",
     desc: "En Papá a la deriva: Camila se pone celosa de Bárbara. Los personajes fememinos son enemigas durante toda la trama por Cristóbal."
+  },
+  {
+    id: "AhTjllxZeyA",
+    desc: "En El señor de la querencia: Patrón le explica a su hijo cómo tratar a su esposa. En esta teleserie, predomina el personaje masculino machista y violento."
+  },
+  {
+    id: "nRugdFM_Ph0",
+    desc: "En Soltera otra vez: Cristina se entera que su novio con el que llevaba más de 8 años le fue infiel con una mujer más joven. En esta teleserie el personaje femenino es protagonista, pero su historia y trama nacen por un hombre y prevalece la envidia a otra mujer."
   }
 ];
 
