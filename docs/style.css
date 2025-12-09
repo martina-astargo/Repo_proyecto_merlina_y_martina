@@ -757,34 +757,3 @@ body {
     z-index: 2; 
 }
 
-/* --- UNIFICACIÓN DE MÁRGENES (TODO IGUAL) --- */
-
-/* 1. Gráficos de Vega (Los de puntitos y barras) */
-#vis, #vis_01, #vis_02, #vis_04 {
-    margin: 40px auto !important; /* Estandarizado a 40px */
-}
-
-/* 2. Contenedores de Flourish (Tarjetas y Scatters) */
-.contenedor-flourish, 
-.flourish-outer, 
-.flourish-wrapper {
-    margin: 40px auto !important; /* Bajamos de 60px/100px a 40px */
-    width: 85% !important; /* Unificamos el ancho también para que se vean alineados */
-}
-
-/* 3. Franjas de Datos (Las de color clarito) */
-.franja-destacada {
-    margin: 40px 0 !important; /* Bajamos de 60px a 40px */
-}
-
-/* 4. Cualquier otro contenedor gráfico que haya quedado gigante */
-.contenedor-grafico {
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
-}
-
-/* 5. Títulos (H4, H5) */
-h4, h5, h6 {
-    margin-top: 40px !important;
-    margin-bottom: 20px !important;
-}
