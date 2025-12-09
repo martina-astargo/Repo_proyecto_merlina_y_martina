@@ -48,7 +48,7 @@ if (powerBtn) {
 
 // --- LÓGICA PARA APAGAR Y PRENDER DE NUEVO ---
 
-const turnOffBtn = document.querySelector('.turn-off-btn');
+const turnOffBtn = document.getElementById('turn-off-btn'); // Buscamos el ID exacto
 const offEffect = document.getElementById('tv-off-effect');
 const turnOnAgainBtn = document.getElementById('turn-on-again-btn');
 
