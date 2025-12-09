@@ -711,15 +711,43 @@ body {
   gap: 6px;
 }
 
-.full-screen-hero::after {
+
+/* --- FONDO DE PORTADA SUAVE (Opción 2) --- */
+
+/* 1. Aseguramos que el contenedor base permita capas encima */
+.full-screen-hero {
+    position: relative; 
+    overflow: hidden; /* Corta la imagen si se sale */
+    z-index: 1; /* Nivel base */
+}
+
+/* 2. La capa "fantasma" con la imagen */
+.full-screen-hero::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Sombra circular: transparente al medio, gris suave en las esquinas */
-    background: radial-gradient(circle, transparent 55%, rgba(0,0,0,0.1) 100%);
-    pointer-events: none; /* Para que no moleste al hacer click */
-    z-index: 1;
+    
+    /* CAMBIA ESTO POR EL NOMBRE DE TU FOTO */
+    background-image: url("images/fondo-portada.jpg"); 
+    
+    background-size: cover;   /* Estira la foto para cubrir todo */
+    background-position: center;
+    
+    /* LA CLAVE: Aquí controlas qué tan fuerte se ve */
+    /* 0.05 es muy sutil (5%) | 0.15 es más visible (15%) */
+    opacity: 0.1; 
+    
+    z-index: -1; /* Se manda al fondo, detrás del texto */
+    
+    /* Opcional: Esto la pone en blanco y negro automáticamente */
+    filter: grayscale(100%); 
+}
+
+/* 3. Aseguramos que el texto quede ENCIMA de la foto */
+.title-content, .scroll-indicator {
+    position: relative;
+    z-index: 2; 
 }

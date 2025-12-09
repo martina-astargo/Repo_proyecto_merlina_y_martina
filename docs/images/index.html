@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Fieras de la TV</title>
+
+    <link rel="icon" type="logo/png" href="images/logo.png">
+
+      <!-- Enlazar CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importar las fuentes Playfair Display y Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+      <meta charset="UTF-8">
+  <style>
+    #vis_01.vega-embed {
+      width: 100%;
+      display: flex;
+      justify-content: center;  /* <--- ESTA ES LA LÍNEA MÁGICA */
+    }
+
+    #vis_01.vega-embed details,
+    #vis_01.vega-embed details summary {
+      position: relative;
+    }
+
+        #vis_04.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis_04.vega-embed details,
+    #vis_04.vega-embed details summary {
+      position: relative;
+    }
+
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <body>
+
+    <div id="intro-container">
+        <img id="tv-image" src="images/tv-off.png" alt="Televisión apagada">
+        <button id="power-btn">Haz click para encender la tele</button>
+    </div>
+
+    <div id="reportaje" style="display: none;">
+  
+
+    <section class="title full-screen-hero">
+        <div class="title-content">
+            <h1>Fieras de la televisión</h1>
+            <h3>¿Cómo es la representación femenina en las teleseries chilenas?</h3>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>&#8595;</span>
+        </div>
+    </section>
+
+   <section class="contenido">
+    <p>
+      A lo largo de más de cinco décadas, las teleseries chilenas han moldeado imaginarios sociales sobre el rol de la mujer. Si bien con el tiempo los personajes femeninos se han vuelto más complejos, aún persisten estereotipos vinculados a la dependencia emocional, la maternidad obligada, o la figura de la “mujer loca” y dramática.
+    </p> 
+
+    <p>
+      Crecimos viendo estas historias, formaron parte de nuestros hogares, de nuestras familias y de esos recuerdos que compartimos con nuestras abuelitas. También son un punto de unión en nuestra amistad. Entre tramas, villanas icónicas y protagonistas, nos preguntamos: ¿cómo se representa a las mujeres en las telenovelas chilenas?
+
+    <p>
+      En este reportaje quisimos analizar cómo esa representación ha evolucionado desde la década de 1970 hasta la actualidad, observando la transformación de los personajes femeninos. Revisamos portadas, tramas y directoras, recordando a las protagonistas nos marcaron y que continúan resonando en nuestra memoria. 
+    </p>
+
+  <meta charset="UTF-8">
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <p>
+        Para comenzar nuestra investigación, recopilamos teleseries desde 1969 hasta 2025, de los cuatro canales de televisión: TVN, T13, MEGA y CHV. Con esto investigamos directores, reparto actoral y tramas para identificar las características y roles que más repercuten en las mujeres. Desde ahí nace toda nuestra base. 
+    </p>
+
+    <div id="vis_01"></div>
+
+  <script src="visualizaciones/vis_01.js"></script>
+
+    <p>
+        Al inicio ya pudimos dar cuenta de una gran diferencia: ¿De las 255 teleseries, cuántas fueron hechas por directoras? Solo 17 fueron producidas por mujeres. 16 pertenecen a María Eugenia Rencoret y 1 a Francisca Bustamante. Decidimos destacarlas en este sitio, considerando la relevancia que han tenido y las telenovelas que han creado.  
+    </p>
+
+<div class="franja-destacada">
+    <div class="dato-contenido">
+        
+        <div class="encabezado-dato">
+            <span class="titulo-gigante">SOLO</span>
+            <span class="titulo-gigante">17</span>
+        </div>
+
+        <div class="dato-texto">
+    De 255 teleseries fueron<br>
+    dirigidas por <span style="color: #ff186e; font-weight: bold;">MUJERES</span>
+</div>
+
+    </div>
+</div>
+
+<div class="flourish-wrapper" style="margin: 60px auto;">
+  <div class="flourish-embed flourish-cards" data-src="visualisation/26496409"></div>
+</div>
+
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript>
+    <img src="https://public.flourish.studio/visualisation/26496409/thumbnail" width="100%" alt="cards visualization" />
+  </noscript>
+
+    <p>
+      Considerando que 238 teleseries han sido dirigidas por hombres, se vuelve evidente cómo esta predominancia influye en las construcciones narrativas y visuales de las mujeres. Al estar concebidas desde miradas masculinas, muchas producciones refuerzan estereotipos que no solo se manifiestan en los diálogos o en las tramas, sino también en elementos superficiales como las portadas y los afiches promocionales.
+    </p>
+   
+    <p>
+        Nombres como “La sexóloga”, “La chúcara” o “La Fiera” ya anticipan una identidad femenina asociada a la sensualidad, la impulsividad o el descontrol emocional, reforzando una imagen caricaturizada. Por ejemplo, en la teleserie “Gatas y tuercas”, se ve una sexualización a una mujer mecánica.
+    </p>
+
+    <p>
+    Frente a este panorama, quisimos realizar un análisis más profundo de las 29 teleseries más relevantes y ampliamente reconocidas entre 1970 y 2025 (considerando niveles de audiencia y reconocimiento en redes sociales). Pusimos atención a sus portadas, personajes, tramas, fuerzas en conflicto y reparto. 
+    </p>  
+
+    <div class="franja-destacada">
+    <div class="dato-contenido">
+        
+        <div class="encabezado-dato">
+            <span class="titulo-gigante">29</span>
+            <span class="titulo-gigante">TELESERIES</span>
+        </div>
+
+        <div class="dato-texto">
+            Analizadas entre 1970 y 2025<br>
+            <span style="font-size: 0.8em; opacity: 0.7;">(Considerando audiencia y redes sociales)</span>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="flourish-outer">
+    <div class="flourish-embed flourish-cards" data-src="visualisation/26481915"></div>
+</div>
+  
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+
+
+    <p>
+        Aunque las portadas son solo la primera impresión; en la trama de las teleseries podemos ver muchas situaciones en donde la mujer mantiene una dependencia emocional o económica. A veces, se muestran mujeres resueltas, pero siempre a la espera del hombre ideal. Por ejemplo en la teleserie “Separados”, aborda la trama mostrando cómo los hombres se separaban de sus parejas o esposas, porque estaban “locas”. El tema de la maternidad, también sigue muy presente como algo solo de mujeres y destacan series como “Sres papis”, en donde se premia o son más “atractivos” los hombres que se hacen cargo de sus hijos. 
+    </p>
+
+    <p>
+        En “Tentación” también se marca un estereotipo hacia la “tentación” de la mujer, o la tentación a caer en los personajes femeninos que aparecen en el afiche. 
+    </p>
+
+    <p>
+    A medida que pasan los años, van variando los colores y personajes que aparecen. Por ejemplo: en muchas portadas se muestra a dos mujeres observando al mismo hombre, lo que tiende a mostrar que las mujeres siempre se “pelean” o están esperando la atención del varón. También, en ocasiones hay más de dos mujeres que observan al mismo hombre o tratan de conquistarlo.
+    </p>
+
+    <p>
+        Con el tiempo, y en las teleseries más nuevas, las mujeres comenzaron a estar en el centro, con hombres a su alrededor disputando su atención. Esto lo podemos ver en teleseries como: “Edificio Corona”, “Caleta del Sol”, “Mamá mechona”, entre otras. 
+    </p>
+
+    <p>
+        Ligado a esto, también hay ciertas escenas que muestran cuál es el rol de los personajes femeninos o cómo representan a las mujeres. Por ejemplo, en “La Fiera”, Catalina Chamorro fue a buscar a su enamorado en caballo o en “El señor de la querencia”, la mujer del patrón le pegó una cachetada para defender a una niña que iba a ser abusada. Estos momentos icónicos también muestran cómo va cambiando los estereotipos con el tiempo. Ahora se muestran más “matriarcas”, o mujeres que toman el liderazgo familiar y tienen el poder económico (como en el caso de “Pituca sin lucas”), en donde la madre debe rehacer su vida con sus hijas y la abuela. En otras donde las mujeres discuten y cuestionan a sus maridos, pero también se mantienen algunas como las ex locas, o dramáticas.
+    </p>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Retro</title>
+
+  <!-- Vincular CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="viewer-box">
+
+    <!-- TV Retro -->
+    <div class="retro-tv">
+      <div class="tv-screen">
+        <img id="thumbImage" src="" alt="Miniatura">
+        <div class="play-icon">▶</div>
+      </div>
+
+      <div class="tv-panel">
+        <div class="tv-dial"></div>
+        <div class="tv-dial"></div>
+
+        <div class="tv-dots">
+          <span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="tv-lines">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Descripción -->
+    <p id="videoDescription"></p>
+
+    <!-- Control remoto -->
+    <div class="remote">
+      <button class="arrow up" onclick="prevVideo()">▲</button>
+
+      <div class="middle-row">
+        <button class="arrow left" onclick="prevVideo()">◄</button>
+        <button class="ok-btn" onclick="openVideo()">OK</button>
+        <button class="arrow right" onclick="nextVideo()">►</button>
+      </div>
+
+      <button class="arrow down" onclick="nextVideo()">▼</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+  
+</script>
+
+    <p>
+        Las escenas muestran, de forma sencilla, la representación de las mujeres en momentos específicos y cómo han ido tomando voz para poder enfrentar los abusos ya sea de los esposos, hijos o patrones. Esto enseña que han variado los roles, pero que siguen dependiendo de alguna forma de los hombres. 
+    </p>
+
+  <div id="vis_02"></div>
+
+  <script src="visualizaciones/vis_02.js"></script>
+    
+    <p>
+      Los roles han variado con el tiempo y también ha aumentado la presencia femenina en el reparto. En los personajes secundarios suelen destacar más las mujeres, mientras que en los protagónicos predomina la figura masculina. Aun así, desde 1970 hasta la actualidad se observa un crecimiento en la participación actoral de las mujeres.
+    </p>
+    
+    <p>
+      En el caso de los antagonistas, se mantiene un mayor equilibrio. Por ejemplo, en las portadas revisadas inicialmente, en las telenovelas románticas suele aparecer una protagonista femenina que corresponde a la esposa o pareja, y como antagonista, otra mujer que ocupa el rol de amante. Es una disputa narrativa que se ha mantenido a pesar de los años.
+    </p>
+    
+    
+   <p>
+    A partir de esta nuestra muestra, observamos que, en las tramas dramáticas, donde el contenido tiende a ser más profundo, las mujeres suelen tomar protagonismo cuando lloran, rompen objetos o gritan. Este tipo de escena se asocia con frecuencia al rol de madre, quien sufre por su marido, amante o hijos, cuyo sufrimiento es causado mayormente por otra mujer. Asimismo, al enterarse de infidelidades, muertes o secretos de otros personajes, mantienen la representación estereotipada de ser chismosas y entrometidas.
+   </p>
+
+    <div class="contenedor-flourish" id="vis_03"> 
+        <div class="flourish-embed flourish-scatter" data-src="visualisation/26112728">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/26112728/thumbnail" width="100%" alt="scatter visualization" /></noscript>
+        </div>
+    </div>
+
+    <p>
+      Las tramas suelen mantener patrones asociados a ciertos géneros de personajes. Por ejemplo, cuando las teleseries abordan temas de poder o dinero, casi siempre hay un patriarca o patrón, un hombre con autoridad casado con una mujer sumisa o  un matrimonio sin amor.
+    </p>
+
+    <p>
+       A veces se muestran mujeres independientes o resueltas, pero generalmente a la espera del “hombre ideal”. Por ejemplo, en la teleserie Separados, la historia se desarrolla desde el punto de vista masculino, donde un grupo de hombres se separan de sus parejas porque están “locas”.
+    </p>
+
+<div class="franja-destacada">
+    <div class="dato-contenido">
+        
+        <div class="encabezado-dato" style="gap: 20px;"> 
+            <span class="titulo-gigante" style="font-size: 3.5rem;">MUJERES INDEPENDIENTES</span>
+        </div>
+
+        <div class="dato-texto" style="margin-top: 15px;">
+            GENERALMENTE A LA ESPERA DEL<br>
+            HOMBRE IDEAL
+        </div>
+
+    </div>
+</div>
+
+<p>
+    Por ejemplo, en la teleserie “Separados”, la historia se desarrolla desde el punto de vista masculino...
+</p>
+
+    <p>
+       La maternidad también continúa representándose como un rol exclusivamente femenino. En Sres. Papis, se premia o se vuelven más “atractivos” los hombres que se hacen cargo de sus hijos, como si aquello fuera algo que destacar.
+    </p>
+
+    <p>
+       En el género romance se repiten las mujeres compitiendo por el amor de un hombre. Sin embargo, en ocasiones, aparecen personajes femeninos más complejos, con diversas maneras de pensar, sentir y relacionarse.
+    </p>
+
+    <p>
+      Si profundizamos aún más en esta dinámica trama–género, es posible relacionar las emociones, sensaciones e impulsos dramáticos predominantes que se asignan a cada tipo de personaje.
+    </p>
+
+      <div id="vis_04"></div>
+
+  <script src="visualizaciones/vis_04.js"></script>
+
+    <p>
+    En el gráfico se distinguen tres categorías: “dominante”, que agrupa a personajes líderes, decisivos y con poder económico o social; “emotivo”, vinculado a emociones como el enamoramiento, la búsqueda de justicia, la venganza u obligaciones afectivas; y “conflictivo”, que reúne a personajes perjudicados, celosos o emocionalmente afectados.
+    </p>    
+
+    <p>
+    Una de nuestras hipótesis iniciales planteaba que la categoría “dominante” estaría liderada por los hombres; sin embargo, los datos muestran que las mujeres se mantuvieron prácticamente a la par. En la categoría “emotivo” sí hubo una diferencia clara: las mujeres aparecieron con mucha mayor frecuencia que los hombres. En “conflictivo”, en cambio, la presencia de ambos géneros se mantuvo equilibrada.
+    </p>
+
+    <div class="franja-destacada">
+    <div class="dato-contenido">
+        <div class="encabezado-dato">
+            <span class="titulo-gigante">MAYORÍA FEMENINA</span>
+        </div>
+        <div class="dato-texto">
+            EN LA CATEGORÍA "EMOTIVO"<br>
+            <span style="font-size: 0.8em; opacity: 0.7;">(Vinculado al enamoramiento y sufrimiento)</span>
+        </div>
+    </div>
+</div>
+
+    <p>
+    Aun así, a lo largo de este reportaje observamos que las mujeres siguen siendo asociadas a emociones como tristeza, enojo o inestabilidad, mientras que los hombres tienden a mantener roles más decisivos o estables, aunque existen protagonistas masculinos que destacan por su ira.
+    </p>
+    <p>
+    Frente a esto nos preguntamos: ¿qué protagonistas femeninas han logrado sobresalir frente a sus contrapartes masculinas? Es imposible pasar por alto a ciertos personajes que han marcado los roles y estereotipos femeninos en las teleseries chilenas.
+    </p>
+
+<div class="flourish-embed flourish-cards" data-src="visualisation/26481093"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26481093/thumbnail" width="100%" alt="cards visualization" /></noscript></div>
+   
+    <p>
+    Catalina Chamorro, protagonista de La Fiera, se convirtió en un personaje emblemático gracias a su carácter duro y, sobre todo, a la forma en que enfrentó a su amado. Lo golpeó, gritó y también lo buscó. Nunca esperó que fuera él quien tomara la iniciativa. Con ello, rompió la imagen tradicional de la mujer sumisa, escondida tras su esposo y dedicada exclusivamente al cuidado de los hijos. Tuvo la valentía de enfrentarse a su padre y a una sociedad que la juzgaba por su forma de ser.
+    </p>
+
+    <p>
+    En La Madrastra también destaca la figura femenina como la protagonista de una historia injusta. Ella debó ingeniárselas de todas las maneras posibles para volver a estar con sus hijos.
+    </p>
+    <p>
+    Todas estas protagonistas, aunque mantienen ciertos estereotipos, también abren paso a nuevas formas de representación: más fuertes y directas. Una mujer que no demuestra miedo ni indecisión y que es capaz de salir adelante sin necesitar de un hombre para mantenerse económicamente. En las teleseries han surgido madres solteras, mujeres divorciadas, nuevas parejas y familias homoparentales. Así, se observan avances en la representación de los roles femeninos: mayor participación de hombres en tareas domésticas, crianza, educación y vida matrimonial, además de una diversificación en los ámbitos laborales.
+    </p>
+
+    <div class="franja-destacada">
+    <div class="dato-contenido">
+        
+        <div class="encabezado-dato" style="gap: 20px;"> 
+            <span class="titulo-gigante" style="font-size: 3.5rem;">PROTAGONISTAS FUERTES</span>
+        </div>
+
+        <div class="dato-texto" style="margin-top: 20px;">
+            ABRIENDO PASO A NUEVAS<br>
+            FORMAS DE REPRESENTACIÓN
+        </div>
+
+    </div>
+</div>
+
+<p>
+    Todas estas protagonistas, aunque mantienen ciertos estereotipos, rompen con la sumisión y abren paso a estas nuevas identidades.
+</p>
+    <p>
+    Sin embargo, todavía predominan personajes femeninos asociados a la venganza, los celos, a la envidia, y al enamoramiento. El antagonismo entre dos mujeres continúa vigente en las teleseries más recientes, especialmente alrededor de hombres poderosos o con dinero. Aún aparece la figura de la mujer que se arrastra, que busca conflictos o dramatismo para obtener atención, caricaturizada como gritona o emocionalmente inestable.   
+    </p>
+
+    <div class="franja-destacada">
+    <div class="dato-contenido">
+        
+        <div class="encabezado-dato">
+            <span class="titulo-gigante" style="font-size: 3.5rem;">VENGANZA, CELOS Y ENVIDIA</span>
+        </div>
+
+        <div class="dato-texto" style="margin-top: 20px;">
+            ESTEREOTIPOS QUE TODAVÍA PREDOMINAN<br>
+            EN LA FIGURA FEMENINA
+        </div>
+
+    </div>
+</div>
+
+<p>
+    El antagonismo entre dos mujeres continúa vigente, especialmente alrededor de hombres poderosos. Aún aparece la figura de la mujer que se arrastra, caricaturizada como gritona o emocionalmente inestable.
+</p>
+    <p>
+    La hipótesis se confirma: la representación estereotipada y secundaria de las mujeres chilenas en las teleseries ha disminuido con los años, pero aún mantiene dependencia, económica o emocional, y la necesidad de protección masculina, ya sea por parte de parejas, amigos o figuras de autoridad.
+    </p>
+
+<div style="text-align: center; margin: 100px 0;">
+        <button id="turn-off-btn">APAGAR TELE</button>
+    </div>
+    <div id="tv-off-effect">
+    <button id="turn-on-again-btn">VOLVER A VER</button>
+</div>
+
+  </div> <script src="index.js"></script>
+
+</body>
+</html>
