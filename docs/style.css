@@ -742,9 +742,10 @@ body {
     
     z-index: -1; /* Se manda al fondo, detrás del texto */
 
-    /* Esto hace que la imagen se borre suavemente hacia abajo */
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+   /* Empieza a borrarse desde arriba (30%) hasta el final (100%) */
+    /* Esto crea una transición muuuuy larga y suave */
+    -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
     
     /* Opcional: Esto la pone en blanco y negro automáticamente */
     filter: grayscale(100%); 
