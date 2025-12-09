@@ -772,25 +772,29 @@ body {
     z-index: 2; 
 }
 
-/* --- NUEVOS CONTROLES EN EL PANEL --- */
+.retro-tv {
+  width: 550px;  /* <--- Volvemos a 550px (antes era 750px) */
+  height: auto;  /* Quitamos la altura fija */
+  margin: 0 auto;
+  display: flex;
+  background: #3b385f;
+  border-radius: 40px;
+  padding: 15px;
+  border: 8px solid #531788;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
 
-/* --- PANEL LATERAL ORDENADO --- */
+/* Limpiamos el panel lateral para que sea simple de nuevo */
 .tv-panel {
-  /* 1. Definimos el espacio */
+  flex: 1.3;
   background: #531788;
   border-radius: 25px;
   padding: 15px;
   border: 4px solid #f3d74c;
-  
-  /* 2. La Magia del Orden Vertical */
   display: flex;
-  flex-direction: column;       /* Uno arriba del otro */
-  justify-content: space-evenly; /* Distribuye el espacio sobrante equitativamente */
-  align-items: center;          /* Todo centrado horizontalmente */
-  
-  /* 3. Aseguramos que ocupe su altura completa */
-  height: 100%; 
-  min-height: 380px; /* Altura mínima para que quepan los botones */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Ajuste para el grupo de diales (para que no se separen mucho) */
